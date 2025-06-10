@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 238 237 233; /* #EEEDE9 */
+  --foreground: 20 20 20;
+  --card: 255 255 255;
+  --card-foreground: 20 20 20;
+  --popover: 255 255 255;
+  --popover-foreground: 20 20 20;
+  --primary: 0 0 0; /* #000000 */
+  --primary-foreground: 255 255 255;
+  --secondary: 245 245 245;
+  --secondary-foreground: 20 20 20;
+  --muted: 245 245 245;
+  --muted-foreground: 115 115 115;
+  --accent: 245 245 245;
+  --accent-foreground: 20 20 20;
+  --destructive: 239 68 68;
+  --destructive-foreground: 255 255 255;
+  --border: 229 229 229;
+  --input: 229 229 229;
+  --ring: 20 20 20;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+
+
+body {
+  color: hsl(var(--foreground));
+  background: hsl(var(--background));
+  font-family: 'DM Sans', 'Roboto', sans-serif;
+  font-feature-settings: "rlig" 1, "calt" 1;
+  background-image: url('images/bg.png');
+  background-color: #F3F1E9;
+  background-repeat: repeat-y;
+
+}
+
+.we-are{ font-size: 20px;}
+
+.neural-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background-color: transparent; 
+}
+
+.neural-node {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(71, 71, 71, 0.507); /* Light gray nodes */
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(150, 150, 150, 0.4);
+}
+
+.neural-connection {
+  position: absolute;
+  height: 1px; 
+  background: linear-gradient(90deg, transparent, rgba(200, 200, 200, 0.3), transparent); /* Light gray connections */
+  transform-origin: left center;
+  animation: pulse-connection 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.6; }
+  25% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+  50% { transform: translateY(5px) translateX(-10px); opacity: 0.9; }
+  75% { transform: translateY(-10px) translateX(5px); opacity: 0.7; }
+}
+
+
+@keyframes pulse-connection {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 0.6; }
+}
+
+
+.gradient-text {
+  background: linear-gradient(135deg, #000000, #333333); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-glow {
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.02) 0%, transparent 65%);
+}
+
+.content-section {
+  padding-top: 2rem; 
+  padding-bottom: 2rem; 
+}
+
+.content-section-tight {
+  padding-top: 2rem; 
+  padding-bottom: 2rem; 
+}
+
+
