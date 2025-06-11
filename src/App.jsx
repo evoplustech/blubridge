@@ -9,6 +9,7 @@ import { Route, Routes } from 'react-router-dom';
 import CareerPage from './pages/CareerPage';
 import PartnerPage from './pages/PartnerPage';
 import ContactPage from './pages/ContactPage';
+import ContactUsPage from './pages/ContactUsPage';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="/Careers" element={<CareerPage />} />
           <Route path="/Partner" element={<PartnerPage />} />
-          <Route path="/Contact" element={<ContactPage />} />
+          {/* <Route path="/Contact" element={<ContactPage />} /> */}
+          <Route path="/Contact" element={<ContactUsPage />} />
+
         </Route>
         </Routes>
       {/* <NeuralNetworkBackground />

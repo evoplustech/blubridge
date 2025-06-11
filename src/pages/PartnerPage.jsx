@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const PartnerPage = () => {
   return (
@@ -34,12 +35,21 @@ const PartnerPage = () => {
                        <p className='inner-content'>
                          We’re eager to collaborate and welcome opportunities for partnership. If you’re a like-minded organization, AI laboratory, researcher, or scientist or if you work in a related field and you’re interested in joining forces, sharing resources, or collaborating on research, learning, and development, we’d be delighted to connect with you.
                        </p>
-                       <h2 className='text-xl font-bold pt-3 underline'>Get in Touch:</h2>
+                       <h2 className='text-xl font-bold pt-3 underline mt-6'>Get in Touch:</h2>
                        <ul className='models'>
                          <li><strong>Contact Number:</strong> 044-4501 2277</li>
                          <li><strong>Email:</strong> research.1@blubridge.com</li>
                          <li><strong>X (Twitter): </strong><a className='underline' href='https://x.com/BlubridgeAI'>https://x.com/BlubridgeAI</a></li>
                        </ul>
+                        <div className='mt-8'>
+                          <p>Prefer to drop us a message?&nbsp;
+                            <strong>
+                              <span className='text-blue-600 underline'>
+                                <Link to='/Contact'>Click here</Link>
+                              </span>
+                            </strong>
+                          </p>
+                        </div>
                    </div>
            </div>
        </section>
