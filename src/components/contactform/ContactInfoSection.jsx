@@ -19,7 +19,7 @@ const ContactInfoSection = () => {
         <h3 className="text-lg font-semibold mb-2">Google Location:</h3>
         <div className="w-full h-64">
 
-            <a target="_blank" href='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.1197282054386!2d80.26559247484599!3d13.028046813638671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5267e22f621745%3A0x2af05bbdefeb0048!2sEvodigital%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1749638100046!5m2!1sen!2sin'><img src="/images/map.jpg"></img></a>
+            <a href="https://www.google.com/maps/place/30,+Norton+Rd,+Mandavelipakkam,+Mandaveli,+Chennai,+Tamil+Nadu+600028/@13.0280416,80.2681674,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267d1ab225575:0xe0b23cd509229297!8m2!3d13.0280416!4d80.2681674!16s%2Fg%2F11h3k0tc7n?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"><img src="/images/map.jpg"></img></a>
           
           {/* <GoogleMapEmbed /> */}
           
