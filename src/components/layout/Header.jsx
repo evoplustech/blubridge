@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Brain } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -16,15 +17,14 @@ const Header = () => {
           <span className="text-2xl font-bold text-black">BluBridge</span>
         </div>
         <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Home</a>
-          <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Careers</a>
-          <a href="#" className="text-gray-700 hover:text-black transition-colors font-medium">Partner</a>
-          
+          <Link to="/">Home</Link>
+          <Link  to="/Careers">Careers</Link>
+          <Link to="/Partner">Partner</Link>
         </div>
         <div className="flex items-center space-x-3">
-          <Button className="bg-black hover:bg-gray-800 text-white px-4 sm:px-6">
+        <Link to="/Contact" className="bg-black hover:bg-gray-800 text-white px-4 sm:px-6 py-2 inline-block rounded-lg ">
             Contact
-          </Button>
+          </Link>
         </div>
       </nav>
     </motion.header>

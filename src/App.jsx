@@ -4,15 +4,29 @@ import NeuralNetworkBackground from '@/components/NeuralBackground';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import HomePage from '@/pages/HomePage';
+import Dashboard from './Dashboard';
+import { Route, Routes } from 'react-router-dom';
+import CareerPage from './pages/CareerPage';
+import PartnerPage from './pages/PartnerPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
     <div className="min-h-screen relative overflow-x-hidden">
-      <NeuralNetworkBackground />
+      <Routes>
+       <Route path="/" element={<Dashboard/>}>
+          {/* Default child route for /dashboard (e.g., a welcome page) */}
+          <Route index element={<HomePage />} />
+          <Route path="/Careers" element={<CareerPage />} />
+          <Route path="/Partner" element={<PartnerPage />} />
+          <Route path="/Contact" element={<ContactPage />} />
+        </Route>
+        </Routes>
+      {/* <NeuralNetworkBackground />
       <Header />
       <HomePage />
       <Footer />
-      <Toaster />
+      <Toaster /> */}
     </div>
   );
 }

@@ -42,8 +42,16 @@ body {
 
 }
 
-.we-are{ font-size: 20px;}
+.inner-page{ min-height: 500px;}
+.inner-content{font-size:1rem; }
+.inner-content a{ text-decoration: underline; }
+.we-are{ font-size:1rem; padding-top:1rem ;border-top:1px solid #dddddd; margin-top:1rem;}
+.dedi{font-size:1rem; padding-top:1rem }
+.dated{ font-size:1rem; }
 
+.models{font-size:1rem; }
+.models{ padding-left:1rem; padding-top: 0.75rem; }
+.models li{ list-style: disc; line-height: 35px; }
 .neural-bg {
   position: fixed;
   top: 0;
@@ -105,6 +113,19 @@ body {
 .content-section-tight {
   padding-top: 2rem; 
   padding-bottom: 2rem; 
+}
+
+.mobilesec{ display: none;}
+.desksec{ display: block;}
+
+@media screen and (max-width: 640px) {
+  .mobilesec {
+    display: block;
+  }
+  .desksec {
+    display: none;
+  }
+  
 }
 
 

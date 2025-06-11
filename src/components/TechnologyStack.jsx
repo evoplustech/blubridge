@@ -156,7 +156,7 @@ const TechCard = ({ title, items, subCategories, delay }) => {
 
 const TechnologyStack = () => {
   return (
-    <section className="px-4 sm:px-6 content-section bg-[#EEEDE9]/80">
+    <section className="px-4 sm:px-6 content-section bg-[#EEEDE9]/80 mobilesec">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
