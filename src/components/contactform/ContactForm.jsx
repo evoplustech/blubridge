@@ -180,13 +180,13 @@ const ContactForm = () => {
                 value={formData.otp}
                 onChange={handleChange}
                 required
-                className="w-full border rounded px-4 py-2"
+                className="w-full border rounded px-4 py-2 border-gray-400"
               />
             </div>
             <button
               type="button"
               onClick={verifyOtp}
-              className="bg-green-600 text-white rounded px-4 py-2 hover:bg-green-700 border-gray-400"
+              className="bg-green-600 text-white rounded px-4 py-2 hover:bg-green-700"
             >
               Verify OTP
             </button>
