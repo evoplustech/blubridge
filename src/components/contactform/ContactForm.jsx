@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   const verifyOtp = () => {
     if (formData.otp === generatedOtp) {
-      setOtpVerified(true);
+      // setOtpVerified(true);
       setError('');
     } else {
       setError('Invalid OTP! Please try again.');
@@ -129,7 +129,7 @@ const ContactForm = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full border rounded px-4 py-2 border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
             />
           </div>
           <div>
@@ -140,7 +140,7 @@ const ContactForm = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full border rounded px-4 py-2 border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
             />
           </div>
         </div>
@@ -156,14 +156,14 @@ const ContactForm = () => {
               onChange={handleChange}
               disabled={otpVerified}
               required
-              className="w-full border rounded px-4 py-2 border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
             />
           </div>
           <button
             type="button"
             onClick={sendOtp}
             disabled={otpVerified}
-            className="bg-blue-600 text-white rounded px-4 py-2 hover:bg-blue-700"
+            className="bg-blue-600 text-white rounded-3xl px-4 py-[0.25rem] hover:bg-blue-700"
           >
             Verify Email
           </button>
@@ -180,13 +180,13 @@ const ContactForm = () => {
                 value={formData.otp}
                 onChange={handleChange}
                 required
-                className="w-full border rounded px-4 py-2 border-gray-400"
+                className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
               />
             </div>
             <button
               type="button"
               onClick={verifyOtp}
-              className="bg-green-600 text-white rounded px-4 py-2 hover:bg-green-700"
+              className="bg-green-600 text-white rounded-3xl px-4 py-[0.25rem] hover:bg-green-700"
             >
               Verify OTP
             </button>
@@ -213,7 +213,7 @@ const ContactForm = () => {
               value={formData.inquiryType}
               onChange={handleChange}
               required
-              className="w-full border rounded px-4 py-3"
+              className="w-full border rounded-3xl px-4 py-[0.25rem]"
             >
               <option value="">Select</option>
               <option value="General">General</option>
@@ -232,7 +232,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full border rounded px-4 py-2 border-gray-400"
+            className="w-full border px-4 py-2 rounded-3xl border-gray-400"
           />
         </div>
 

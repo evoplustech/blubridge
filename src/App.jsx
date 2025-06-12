@@ -13,7 +13,7 @@ import ContactUsPage from './pages/ContactUsPage';
 
 function App() {
   return (
-    <div className="min-h-screen relative overflow-x-hidden">
+    <div className="min-h-screen relative overflow-x-hidden ">
       <Routes>
        <Route path="/" element={<Dashboard/>}>
           {/* Default child route for /dashboard (e.g., a welcome page) */}

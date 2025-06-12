@@ -107,7 +107,7 @@ const NeuralNetworkBackground = () => {
 
   return (
     <div ref={containerRef} className="neural-bg">
-      {/* {connections.map((connection) => (
+      {connections.map((connection) => (
         <div
           key={connection.id}
           className="neural-connection"
@@ -119,7 +119,7 @@ const NeuralNetworkBackground = () => {
             animationDelay: `${connection.delay}s`,
           }}
         />
-      ))} */}
+      ))}
       {nodes.map((node) => (
         <div
           key={node.id}

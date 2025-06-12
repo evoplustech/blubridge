@@ -130,5 +130,12 @@ body {
 
 
 .react-tel-input .form-control{
-  height: 47px !important;
+  height: 31px !important;
+  border-radius: 20px;
 }
+
+
+/* Raj code css start - 12-Jun-2025 */
+
+
+/* Raj code css end  - 12-Jun-2025 */
