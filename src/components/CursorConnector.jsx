@@ -21,7 +21,7 @@ const CursorConnector = () => {
 
     const createNodes = () => {
       const newNodes = [];
-      const totalNodes = 160; // Reduced number of dots
+      const totalNodes = 200; // Reduced number of dots
 
       for (let i = 0; i < totalNodes; i++) {
         const x = Math.random() * window.innerWidth;

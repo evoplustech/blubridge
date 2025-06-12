@@ -58,7 +58,7 @@ const HomePage = () => {
             </p> */}
             </motion.div>
 
-                <div className="bg-white/60 rounded-xl p-6 shadow-lg border border-gray-200/50">
+                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200/50">
                  <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
                     <ul className='models'>
@@ -155,7 +155,7 @@ const HomePage = () => {
       
       
 
-      <section className="px-4 sm:px-6 content-section-tight mb-12">
+      {/* <section className="px-4 sm:px-6 content-section-tight mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -179,7 +179,7 @@ const HomePage = () => {
             </Button>
           </div>
         </motion.div>
-      </section>
+      </section> */}
     </main>
   );
 };
