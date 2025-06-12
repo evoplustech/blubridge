@@ -11,6 +11,7 @@ const Header = () => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
       className="relative z-20 px-4 sm:px-6 py-4"
+      style={{ backgroundColor: '#efede5',  borderBottom: '0.5px solid #e6e3d8' }}
     >
       <nav className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
