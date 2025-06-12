@@ -18,7 +18,7 @@ const HomePage = () => {
             className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
           >
             <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-              BluBridge
+              BluBridge AI
             </h1>
             {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-base sm:text-lg">
@@ -42,6 +42,9 @@ const HomePage = () => {
       </section>
 
       <section className="px-4 sm:px-6 content-section py-0">
+        <h1 className="text-3xl text-center mb-8 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
+              BluBridge AI
+            </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +62,7 @@ const HomePage = () => {
             </motion.div>
 
                 <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200/50">
-                 <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
+                 {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
                     <ul className='models'>
                       <li>Understanding Foundation Models</li>
@@ -70,7 +73,10 @@ const HomePage = () => {
                       <li>Chatbots</li>
                       <li>Audio</li>
                       <li>Images</li>
-                    </ul>
+                    </ul> */}
+                      <p className='p-4'>
+                        Blubridge Technologies Pvt Ltd is an early-stage AI research company based in Chennai, India. Our mission is to develop deep expertise by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model. Our competitive differentiators are foundation model ownership, enhanced adaptability, and strong data privacy assurances.
+                      </p>
                 </div>
 
 

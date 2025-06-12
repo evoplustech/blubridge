@@ -30,7 +30,7 @@ const PartnerPage = () => {
                className="text-center"
              >
                </motion.div>
-                   <div className="bg-white/60 rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
+                   <div className="bg-white rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
                   
                        <p className='inner-content'>
                          We’re eager to collaborate and welcome opportunities for partnership. If you’re a like-minded organization, AI laboratory, researcher, or scientist or if you work in a related field and you’re interested in joining forces, sharing resources, or collaborating on research, learning, and development, we’d be delighted to connect with you.

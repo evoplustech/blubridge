@@ -163,7 +163,7 @@ const ContactForm = () => {
             type="button"
             onClick={sendOtp}
             disabled={otpVerified}
-            className="bg-blue-600 text-white rounded-3xl px-4 py-[0.25rem] hover:bg-blue-700"
+            className="bg-black text-white rounded-3xl px-4 py-[0.25rem] hover:bg-gray-900"
           >
             Verify Email
           </button>
@@ -186,7 +186,7 @@ const ContactForm = () => {
             <button
               type="button"
               onClick={verifyOtp}
-              className="bg-green-600 text-white rounded-3xl px-4 py-[0.25rem] hover:bg-green-700"
+              className="bg-black text-white rounded-3xl px-4 py-[0.25rem] hover:bg-gray-900"
             >
               Verify OTP
             </button>
@@ -240,7 +240,7 @@ const ContactForm = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-700 mt-4 mb-8"
+            className="bg-black text-white px-6 py-2 rounded hover:bg-gray-900 mt-4 mb-8"
           >
             Submit
           </button>
