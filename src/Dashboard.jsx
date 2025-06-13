@@ -7,6 +7,7 @@ import { Outlet } from 'react-router-dom';
 import { Toaster } from '@/components/ui/toaster';
 import CursorConnector from './components/CursorConnector';
 import NetworkCanvas from './components/NetworkCanvas';
+import NodeConnections from './components/NodeConnections';
 
 
 
@@ -15,7 +16,8 @@ const Dashboard = () => {
     <div>
       {/* <NeuralNetworkBackground /> */}
       {/* <CursorConnector /> */}
-      <NetworkCanvas />
+      {/* <NetworkCanvas /> */}
+      <NodeConnections />
       <Header />
         <Outlet />
       <Footer/>

@@ -270,8 +270,8 @@ const NetworkCanvas = () => {
         const time = performance.now() / 600;
 
         const animatedPoints = basePoints.map(({ x, y, phaseX, phaseY }) => ([
-            x + Math.sin(time + phaseX) * 5,
-            y + Math.cos(time + phaseY) * 5,
+            x + Math.sin(time + phaseX) * 6,
+            y + Math.cos(time + phaseY) * 6,
         ]));
 
         points.current = animatedPoints; // update current positions
