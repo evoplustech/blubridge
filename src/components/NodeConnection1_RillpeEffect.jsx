@@ -7,9 +7,9 @@ const NodeConnections1 = () => {
   const PARTICLE_COUNT = 160;
   const HOVER_RADIUS = 100;
   const NEIGHBOR_COUNT = 4;
-  const BASE_OPACITY = 0.08;
-  const HOVER_OPACITY = 0.5;
-  const OPACITY_LERP_SPEED = 0.12;
+  const BASE_OPACITY = 0.5;
+  const HOVER_OPACITY = 0.95;
+  const OPACITY_LERP_SPEED = 0.15;
 
   const seededRandom = (seed) => {
     let x = Math.sin(seed++) * 10000;
@@ -50,7 +50,6 @@ const NodeConnections1 = () => {
           offsetX: 0,
           offsetY: 0,
           waveOffset: Math.random() * Math.PI * 2,
-          pulsePhase: Math.random() * Math.PI * 2, // For unique pulse timing
         };
       })
     ).flat().filter(Boolean);
@@ -71,8 +70,9 @@ const NodeConnections1 = () => {
         const dx = pointer.x - point.x;
         const dy = pointer.y - point.y;
         const dist = Math.sqrt(dx * dx + dy * dy);
-        const angle = (dist / 30 - time * 0.002 + point.waveOffset) % (2 * Math.PI);
-        const wave = Math.sin(angle) * Math.exp(-dist / 300) * 5;
+        const angle = (dist / 20 - time * 0.003 + point.waveOffset) % (2 * Math.PI);
+        // const wave = Math.sin(angle) * Math.exp(-dist / 300) * 12;
+        const wave = Math.sin(angle) * Math.exp(-dist / 300) * 5; // Reduced from 12 to 5
 
         point.x = point.originalX + wave;
         point.y = point.originalY + wave;
@@ -106,26 +106,23 @@ const NodeConnections1 = () => {
           ctx.beginPath();
           ctx.moveTo(point.x, point.y);
           ctx.lineTo(neighbor.x, neighbor.y);
-          ctx.strokeStyle = `rgba(128, 128, 128, ${next.toFixed(4)})`; // Dull grey line
+          ctx.strokeStyle = `rgba(200, 200, 200, ${next.toFixed(4)})`; // very light dull grey
+          // ctx.strokeStyle = `rgba(130, 150, 180, ${next.toFixed(4)})`; // Lighter steel-blue
+          // ctx.strokeStyle = `rgba(200, 200, 210, ${next.toFixed(4)})`;
+          // ctx.strokeStyle = `rgba(100, 130, 170, ${next.toFixed(4)})`;
           ctx.lineWidth = 1;
           ctx.stroke();
         });
       });
 
-      // Draw pulsing node dots
-      points.current.forEach((point) => {
-        const dx = pointer.x - point.x;
-        const dy = pointer.y - point.y;
-        const dist = Math.sqrt(dx * dx + dy * dy);
-
-        let radius = 2;
-        if (dist < HOVER_RADIUS) {
-          radius += Math.sin((time / 150) + point.pulsePhase) * 1.2 + 1.5;
-        }
-
+      points.current.forEach(({ x, y }) => {
         ctx.beginPath();
-        ctx.arc(point.x, point.y, radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(90, 100, 115, 0.5)'; // Slightly darker dots
+        ctx.arc(x, y, 2.5, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(60, 60, 60, 0.7)'; // Darker than the lines
+        ctx.arc(x, y, 2.5, 0, Math.PI * 2);      // Keep slightly large dot size
+        // ctx.fillStyle = 'rgba(180, 190, 200, 0.25)';
+        // ctx.fillStyle = 'rgba(90, 100, 120, 0.6)'; // Slightly darker, more visible
+        // ctx.fillStyle = 'rgba(110, 120, 140, 0.5)'; // Darker node dots
         ctx.fill();
       });
 
