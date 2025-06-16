@@ -8,7 +8,8 @@ import { Toaster } from '@/components/ui/toaster';
 import CursorConnector from './components/CursorConnector';
 import NetworkCanvas from './components/NetworkCanvas';
 import NodeConnections from './components/NodeConnections';
-import NodeConnections1 from './components/NodeConnection1';
+import NodeConnections1 from './components/NodeConnections1';
+import NodeConnections2 from './components/NodeConnections2';
 
 
 
@@ -19,7 +20,8 @@ const Dashboard = () => {
       {/* <CursorConnector /> */}
       {/* <NetworkCanvas /> */}
       {/* <NodeConnections /> */}
-      <NodeConnections1 />
+      {/* <NodeConnections1 /> */}
+      <NodeConnections2 />
       <Header />
         <Outlet />
       <Footer/>
