@@ -52,9 +52,7 @@ const NodeConnections1 = () => {
           offsetY: 0,
           angle: seededRandom(seed + idx * 59) * Math.PI * 2,
           speed: 0.02 + seededRandom(seed + idx * 97) * 0.03,
-          // amplitude: 2 + seededRandom(seed + idx * 31) * 2,
-          amplitude: 0.8 + seededRandom(seed + idx * 31) * 1.2,
-
+          amplitude: 0.4 + seededRandom(seed + idx * 31) * 8,
         };
       })
     )
@@ -104,14 +102,10 @@ const NodeConnections1 = () => {
         const targetX = point.originalX + point.offsetX;
         const targetY = point.originalY + point.offsetY;
 
-        // point.x += (targetX - point.x) * 0.05 + dx * 0.0005 * force;
-        // point.y += (targetY - point.y) * 0.05 + dy * 0.0005 * force;
-        point.x += (targetX - point.x) * 0.12 + dx * 0.0007 * force;
-        point.y += (targetY - point.y) * 0.12 + dy * 0.0007 * force;
-
+        point.x += (targetX - point.x) * 0.2 + dx * 0.0009 * force;
+        point.y += (targetY - point.y) * 0.2 + dy * 0.0009 * force;
       });
 
-      // Regular neighbor lines
       points.current.forEach((point, idx) => {
         const neighbors = points.current
           .map((p, i) => ({ index: i, distance: getDistance(point, p) }))
@@ -150,107 +144,44 @@ const NodeConnections1 = () => {
         });
       });
 
-      // 🔄 Virtual node with gradient lines
-      // 🔺 Virtual node forms triangle with 3 nearest points
-        const virtualNode = { x: pointer.x, y: pointer.y };
-        const nearest = points.current
+      const virtualNode = { x: pointer.x, y: pointer.y };
+      const nearest = points.current
         .map((p) => ({
-            point: p,
-            distance: getDistance(p, virtualNode),
+          point: p,
+          distance: getDistance(p, virtualNode),
         }))
         .sort((a, b) => a.distance - b.distance)
         .slice(0, 3);
 
-        // if (nearest.length === 1) {
-        // // Connect mouse to all 3 points
-        // nearest.forEach(({ point }) => {
-        //     const grad = ctx.createLinearGradient(
-        //     virtualNode.x,
-        //     virtualNode.y,
-        //     point.x,
-        //     point.y
-        //     );
-        //     grad.addColorStop(0, 'rgba(169, 169, 169, 0.2)');
-        //     grad.addColorStop(1, 'rgba(169, 169, 169, 0.2)');
+      if (nearest.length >= 1) {
+        nearest.forEach(({ point }) => {
+          const grad = ctx.createLinearGradient(
+            virtualNode.x,
+            virtualNode.y,
+            point.x,
+            point.y
+          );
+          grad.addColorStop(0, 'rgba(55, 65, 81, 0.9)');
+          grad.addColorStop(1, 'rgba(148, 163, 184, 0.2)');
 
-        //     ctx.beginPath();
-        //     ctx.moveTo(virtualNode.x, virtualNode.y);
-        //     ctx.lineTo(point.x, point.y);
-        //     ctx.strokeStyle = grad;
-        //     ctx.lineWidth = 1.4;
-        //     ctx.stroke();
-        // });
+          ctx.beginPath();
+          ctx.moveTo(virtualNode.x, virtualNode.y);
+          ctx.lineTo(point.x, point.y);
+          ctx.strokeStyle = grad;
+          ctx.lineWidth = 1.4;
+          ctx.stroke();
+        });
+      }
 
-        // // Connect 3 points to each other (triangle edges)
-        // for (let i = 0; i < 3; i++) {
-        //     for (let j = i + 1; j < 3; j++) {
-        //     const p1 = nearest[i].point;
-        //     const p2 = nearest[j].point;
-        //     const grad = ctx.createLinearGradient(p1.x, p1.y, p2.x, p2.y);
-        //     grad.addColorStop(0, 'rgba(148, 163, 184, 0.2)');
-        //     grad.addColorStop(1, 'rgba(55, 65, 81, 0.6)');
-
-        //     ctx.beginPath();
-        //     ctx.moveTo(p1.x, p1.y);
-        //     ctx.lineTo(p2.x, p2.y);
-        //     ctx.strokeStyle = grad;
-        //     ctx.lineWidth = 1;
-        //     ctx.stroke();
-        //     }
-        // }
-        // }
-
-        if (nearest.length >= 1) {
-          nearest.forEach(({ point }) => {
-            const grad = ctx.createLinearGradient(
-              virtualNode.x,
-              virtualNode.y,
-              point.x,
-              point.y
-            );
-            grad.addColorStop(0, 'rgba(55, 65, 81, 0.9)');
-            grad.addColorStop(1, 'rgba(148, 163, 184, 0.2)');
-
-            ctx.beginPath();
-            ctx.moveTo(virtualNode.x, virtualNode.y);
-            ctx.lineTo(point.x, point.y);
-            ctx.strokeStyle = grad;
-            ctx.lineWidth = 1.4;
-            ctx.stroke();
-          });
-        }
-
-
-      nearest.forEach(({ point }) => {
-        const grad = ctx.createLinearGradient(
-          virtualNode.x,
-          virtualNode.y,
-          point.x,
-          point.y
-        );
-
-        grad.addColorStop(0, 'rgba(55, 65, 81, 0.9)'); // near cursor
-        grad.addColorStop(1, 'rgba(148, 163, 184, 0.2)'); // far end
-
-        ctx.beginPath();
-        ctx.moveTo(virtualNode.x, virtualNode.y);
-        ctx.lineTo(point.x, point.y);
-        ctx.strokeStyle = grad;
-        ctx.lineWidth = 1.4;
-        ctx.stroke();
-      });
-
-      // Optional: dot at mouse
       ctx.beginPath();
       ctx.arc(pointer.x, pointer.y, 2.5, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(71, 85, 105, 0.6)';
       ctx.fill();
 
-      // Node circles
       points.current.forEach(({ x, y }) => {
         ctx.beginPath();
         ctx.arc(x, y, 3, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(138, 139, 160, 0.2)';
+        ctx.fillStyle = 'rgba(138, 139, 160, 0.3)';
         ctx.fill();
       });
 
