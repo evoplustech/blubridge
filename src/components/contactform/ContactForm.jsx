@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   const verifyOtp = () => {
     if (formData.otp === generatedOtp) {
-      // setOtpVerified(true);
+      setOtpVerified(true);
       setError('');
     } else {
       setError('Invalid OTP! Please try again.');
