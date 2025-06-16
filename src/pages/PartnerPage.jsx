@@ -21,6 +21,9 @@ const PartnerPage = () => {
            </div>
        </section>
        <section className="px-1 sm:px-2 mb-14 py-0">
+        <h1 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold gradient-text" style={{lineHeight: '1.2'}}>
+              Partner With Us
+            </h1>
            <div className="max-w-7xl mx-auto">
              <motion.div
                initial={{ opacity: 0, y: 20 }}
