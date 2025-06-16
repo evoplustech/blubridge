@@ -61,7 +61,7 @@ const HomePage = () => {
             </p> */}
             </motion.div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200/50">
+                <div className="rounded-xl p-6 shadow-lg border border-gray-200/50" style={{ backgroundColor: '#fffdf7'} }>
                  {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
                     <ul className='models'>
@@ -74,7 +74,7 @@ const HomePage = () => {
                       <li>Audio</li>
                       <li>Images</li>
                     </ul> */}
-                      <p className='p-4' style={{ backgroundColor: '#fffdf7'} }>
+                      <p className='p-4' >
                         Blubridge Technologies Pvt Ltd is an early-stage AI research company based in Chennai, India. Our mission is to develop deep expertise by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model. Our competitive differentiators are foundation model ownership, enhanced adaptability, and strong data privacy assurances.
                       </p>
                 </div>
