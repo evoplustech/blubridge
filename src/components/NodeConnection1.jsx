@@ -51,7 +51,7 @@ const NodeConnections1 = () => {
           offsetX: 0,
           offsetY: 0,
           angle: seededRandom(seed + idx * 59) * Math.PI * 2,
-          speed: 0.02 + seededRandom(seed + idx * 97) * 0.03,
+          speed: 0.02 + seededRandom(seed + idx * 97) * 0.05,
           amplitude: 0.4 + seededRandom(seed + idx * 31) * 8,
         };
       })
