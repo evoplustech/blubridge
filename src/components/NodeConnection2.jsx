@@ -4,6 +4,7 @@ const NodeConnection2 = () => {
   const canvasRef = useRef(null);
   const points = useRef([]);
   const mousePos = useRef({ x: 0, y: 0 });
+
   const PARTICLE_COUNT = 160;
   const HOVER_RADIUS = 90;
   const NEIGHBOR_COUNT = 4;
@@ -19,17 +20,20 @@ const NodeConnection2 = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
-    const dpr = window.devicePixelRatio || 1;
+    const maxWidth = 1920;
+    const maxHeight = 1080;
 
-    canvas.width = window.innerWidth * dpr;
-    canvas.height = window.innerHeight * dpr;
-    canvas.style.width = `${window.innerWidth}px`;
-    canvas.style.height = `${window.innerHeight}px`;
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5); // cap dpr to reduce GPU load
+    const width = Math.min(window.innerWidth, maxWidth);
+    const height = Math.min(window.innerHeight, maxHeight);
+
+    canvas.width = width * dpr;
+    canvas.height = height * dpr;
+    canvas.style.width = `${width}px`;
+    canvas.style.height = `${height}px`;
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.scale(dpr, dpr);
 
-    const width = window.innerWidth;
-    const height = window.innerHeight;
     const seed = width * height;
 
     const cols = Math.ceil(Math.sqrt(PARTICLE_COUNT * (width / height)));
@@ -51,7 +55,7 @@ const NodeConnection2 = () => {
           offsetX: 0,
           offsetY: 0,
           angle: seededRandom(seed + idx * 59) * Math.PI * 2,
-          speed: 1.3 + seededRandom(seed + idx * 97) * 0.8,
+          speed: 0.3 + seededRandom(seed + idx * 97) * 0.8,
           amplitude: 10 + seededRandom(seed + idx * 31) * 15.0,
         };
       })
@@ -83,14 +87,19 @@ const NodeConnection2 = () => {
     };
 
     const opacityMap = new Map();
+    let lastTime = performance.now();
 
-    const draw = () => {
+    const draw = (time) => {
+      const delta = (time - lastTime) / 1000;
+      lastTime = time;
+
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       const pointer = mousePos.current;
 
       points.current.forEach((point) => {
-        point.angle += point.speed * 0.01;
+        point.angle += point.speed * delta * 1.5; // use time delta
+
         point.offsetX = Math.cos(point.angle) * point.amplitude;
         point.offsetY = Math.sin(point.angle) * point.amplitude;
 
@@ -144,6 +153,7 @@ const NodeConnection2 = () => {
         });
       });
 
+      // Pointer connector lines
       const virtualNode = { x: pointer.x, y: pointer.y };
       const nearest = points.current
         .map((p) => ({
@@ -153,31 +163,31 @@ const NodeConnection2 = () => {
         .sort((a, b) => a.distance - b.distance)
         .slice(0, 3);
 
-      if (nearest.length >= 1) {
-        nearest.forEach(({ point }) => {
-          const grad = ctx.createLinearGradient(
-            virtualNode.x,
-            virtualNode.y,
-            point.x,
-            point.y
-          );
-          grad.addColorStop(0, 'rgba(55, 65, 81, 0.9)');
-          grad.addColorStop(1, 'rgba(148, 163, 184, 0.2)');
+      nearest.forEach(({ point }) => {
+        const grad = ctx.createLinearGradient(
+          virtualNode.x,
+          virtualNode.y,
+          point.x,
+          point.y
+        );
+        grad.addColorStop(0, 'rgba(55, 65, 81, 0.9)');
+        grad.addColorStop(1, 'rgba(148, 163, 184, 0.2)');
 
-          ctx.beginPath();
-          ctx.moveTo(virtualNode.x, virtualNode.y);
-          ctx.lineTo(point.x, point.y);
-          ctx.strokeStyle = grad;
-          ctx.lineWidth = 1.4;
-          ctx.stroke();
-        });
-      }
+        ctx.beginPath();
+        ctx.moveTo(virtualNode.x, virtualNode.y);
+        ctx.lineTo(point.x, point.y);
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = 1.4;
+        ctx.stroke();
+      });
 
+      // Cursor node
       ctx.beginPath();
       ctx.arc(pointer.x, pointer.y, 2.5, 0, Math.PI * 2);
       ctx.fillStyle = 'rgba(71, 85, 105, 0.6)';
       ctx.fill();
 
+      // Static nodes
       points.current.forEach(({ x, y }) => {
         ctx.beginPath();
         ctx.arc(x, y, 3, 0, Math.PI * 2);
