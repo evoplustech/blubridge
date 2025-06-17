@@ -10,7 +10,7 @@ const ContactUsPage = () => {
           <div className='w-full lg:w-1/2 flex flex-col lg:mx-4 mx-auto'>
             <ContactInfoSection />
           </div>
-          <div className='flex flex-col bg-white rounded-lg mt-12 lg:mt-0 lg:my-0 md:mt-8 sm:mt-8 lg:w-1/2  mx-0 lg:mx-4 md:mx-4 md:my-8 z-0 '>
+          <div className='flex flex-col rounded-lg mt-12 lg:mt-0 lg:my-0 md:mt-8 sm:mt-8 lg:w-1/2  mx-0 lg:mx-4 md:mx-4 md:my-8 z-0 ' style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
               <ContactForm />
           </div>
       </div>

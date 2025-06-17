@@ -133,9 +133,15 @@ body {
   height: 31px !important;
   border-radius: 20px;
 }
-
+.flag-dropdown {
+  border: 1px solid #cacaca;
+  border-right: none !important;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+}
 
 /* Raj code css start - 12-Jun-2025 */
 
 
 /* Raj code css end  - 12-Jun-2025 */
+
