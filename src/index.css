@@ -140,8 +140,15 @@ body {
   border-top-left-radius: 40px !important;
   border-bottom-left-radius: 40px !important;
 }
-
-
+.react-tel-input .selected-flag{
+  background-color: #f0eeee !important;
+  border-right: none !important;
+  border-top-left-radius: 40px !important;
+  border-bottom-left-radius: 40px !important;
+}
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus{
+  background-color: #c6c6c6 !important;
+}
 
 /* Raj code css start - 12-Jun-2025 */
 
