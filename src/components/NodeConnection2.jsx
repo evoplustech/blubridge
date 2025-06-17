@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-const NodeConnections1 = () => {
+const NodeConnection2 = () => {
   const canvasRef = useRef(null);
   const points = useRef([]);
   const mousePos = useRef({ x: 0, y: 0 });
@@ -51,8 +51,8 @@ const NodeConnections1 = () => {
           offsetX: 0,
           offsetY: 0,
           angle: seededRandom(seed + idx * 59) * Math.PI * 2,
-          speed: 0.06 + seededRandom(seed + idx * 97) * 0.05,
-          amplitude: 0.8 + seededRandom(seed + idx * 31) * 0.8,
+          speed: 0.8 + seededRandom(seed + idx * 97) * 0.8,
+          amplitude: 10 + seededRandom(seed + idx * 31) * 15.0,
         };
       })
     )
@@ -90,7 +90,7 @@ const NodeConnections1 = () => {
       const pointer = mousePos.current;
 
       points.current.forEach((point) => {
-        point.angle += point.speed;
+        point.angle += point.speed * 0.01;
         point.offsetX = Math.cos(point.angle) * point.amplitude;
         point.offsetY = Math.sin(point.angle) * point.amplitude;
 
@@ -225,4 +225,4 @@ const NodeConnections1 = () => {
   );
 };
 
-export default NodeConnections1;
+export default NodeConnection2;

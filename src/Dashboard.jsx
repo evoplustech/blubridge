@@ -9,6 +9,7 @@ import CursorConnector from './components/CursorConnector';
 import NetworkCanvas from './components/NetworkCanvas';
 import NodeConnections from './components/NodeConnections';
 import NodeConnections1 from './components/NodeConnection1';
+import NodeConnection2 from './components/NodeConnection2';
 
 
 
@@ -19,7 +20,8 @@ const Dashboard = () => {
       {/* <CursorConnector /> */}
       {/* <NetworkCanvas /> */}
       {/* <NodeConnections /> */}
-      <NodeConnections1 />
+      {/* <NodeConnections1 /> */}
+      <NodeConnection2 />
       <Header />
         <Outlet />
       <Footer/>
