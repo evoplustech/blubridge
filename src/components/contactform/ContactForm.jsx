@@ -73,7 +73,7 @@ const ContactForm = () => {
     e.preventDefault();
 
     if (!otpVerified) {
-      setError('Please verify the OTP before submitting the form.');
+      setError('Please verify the Email with OTP before submitting the form.');
       return;
     }
 
@@ -170,7 +170,7 @@ const ContactForm = () => {
         </div>
 
         {/* OTP Input */}
-        {otpSent && !otpVerified && (
+        {otpSent &&  (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
             <div>
               <label className="block mb-1 font-medium">Enter OTP*</label>
@@ -188,7 +188,7 @@ const ContactForm = () => {
               onClick={verifyOtp}
               className="bg-black text-white rounded-3xl px-4 py-[0.25rem] hover:bg-gray-900"
             >
-              Verify OTP
+              { otpVerified?('OTP Verified'):('Verify OTP')}
             </button>
           </div>
         )}
@@ -216,9 +216,11 @@ const ContactForm = () => {
               className="w-full border rounded-3xl px-4 py-[0.25rem]"
             >
               <option value="">Select</option>
-              <option value="General">General</option>
-              <option value="Support">Support</option>
-              <option value="Sales">Sales</option>
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Partnership/Collaboration">Partnership/Collaboration</option>
+              <option value="Careers">Careers</option>
+              <option value="Research">Research</option>
+              <option value="Media/Press">Media/Press</option>
             </select>
           </div>
         </div>

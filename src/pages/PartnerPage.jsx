@@ -5,23 +5,8 @@ import { Link } from 'react-router-dom';
 const PartnerPage = () => {
   return (
     <div>
-
-   <section className="px-4 sm:px-6 flex items-center pt-3 pb-3">
-           <div className="max-w-7xl mx-auto text-center">
-             <motion.div
-               initial={{ opacity: 0, y: 30 }}
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ duration: 0.8, delay: 0.2 }}
-               className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
-             >
-               <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text" style={{lineHeight: '1.2'}}>  
-                Partner With Us
-               </h1>
-             </motion.div>
-           </div>
-       </section>
        <section className="px-1 sm:px-2 mb-14 py-0">
-        <h1 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold gradient-text" style={{lineHeight: '1.2'}}>
+        <h1 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold gradient-text mb-4" style={{lineHeight: '1.2'}}>
               Partner With Us
             </h1>
            <div className="max-w-7xl mx-auto">
@@ -33,7 +18,7 @@ const PartnerPage = () => {
                className="text-center"
              >
                </motion.div>
-                   <div className="bg-white rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
+                   <div className="rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
                   
                        <p className='inner-content'>
                          We’re eager to collaborate and welcome opportunities for partnership. If you’re a like-minded organization, AI laboratory, researcher, or scientist or if you work in a related field and you’re interested in joining forces, sharing resources, or collaborating on research, learning, and development, we’d be delighted to connect with you.

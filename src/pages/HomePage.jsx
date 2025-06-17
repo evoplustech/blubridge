@@ -9,41 +9,9 @@ import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, 
 const HomePage = () => {
   return (
     <main className="relative z-10">
-      <section className="px-4 sm:px-6 flex items-center pt-4 pb-4">
-        <div className="max-w-7xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
-          >
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-              BluBridge AI
-            </h1>
-            {/* <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-base sm:text-lg">
-                Explore Platform
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button variant="outline" size="lg" className="px-8 py-3 text-base sm:text-lg border-black text-black hover:bg-black hover:text-white">
-                <Play className="mr-2 w-5 h-5" />
-                Request Demo
-              </Button>
-            </div> */}
-          </motion.div>
-          
-         {/* <div className="mt-16 sm:mt-20 grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
-            <StatCard number="1000+" label="AI Models Deployed" delay={0.3} />
-            <StatCard number="2PB+" label="Data Processed Daily" delay={0.5} />
-            <StatCard number="40%" label="Avg. Efficiency Gain" delay={0.7} />
-            <StatCard number="24/7" label="Expert Support" delay={0.9} />
-          </div> */}
-        </div>
-      </section>
-
       <section className="px-4 sm:px-6 content-section py-0">
-        <h1 className="text-3xl text-center mb-8 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-              BluBridge AI
+        <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
+              BluBridge
             </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div

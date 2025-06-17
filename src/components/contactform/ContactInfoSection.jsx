@@ -2,7 +2,7 @@ import GoogleMapEmbed from "./GoogleMapEmbed.jsx"
 
 const ContactInfoSection = () => {
   return (
-    <div className="text-black px-6 py-8 rounded-lg max-w-2xl space-y-6 bg-white">
+    <div className="text-black px-6 py-8 rounded-lg max-w-2xl space-y-6"   style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
       {/* Address */}
       <div>
         <h3 className="text-lg font-semibold mb-1">Our Address:</h3>
