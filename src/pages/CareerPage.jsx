@@ -4,25 +4,7 @@ import { motion } from 'framer-motion';
 const CareerPage = () => {
   return (
     <div>
-
-    <section className="px-4 sm:px-6 flex items-center pt-3 pb-3">
-        <div className="max-w-7xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
-          >
-            <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text" style={{lineHeight: '1.2'}}>
-              Join Us
-            </h1>
-          </motion.div>
-        </div>
-    </section>
     <section className="px-1 sm:px-2 mb-14 py-0">
-      <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text text-center mt-3" style={{lineHeight: '1.2'}}>  
-            Join Us
-          </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -32,8 +14,11 @@ const CareerPage = () => {
             className="text-center"
           >
             </motion.div>
-                <div className="bg-white rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
-               
+            <h1 className="text-3xl sm:text-3xl md:text-4xl text-center font-bold gradient-text mb-4" style={{lineHeight: '1.2'}}>
+              Join Us
+            </h1>
+                <div className="rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
+                    
                     <p className='inner-content'>
                        We have our modest offices at <a href="https://www.google.com/maps/place/30,+Norton+Rd,+Mandavelipakkam,+Mandaveli,+Chennai,+Tamil+Nadu+600028/@13.0280416,80.2681674,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267d1ab225575:0xe0b23cd509229297!8m2!3d13.0280416!4d80.2681674!16s%2Fg%2F11h3k0tc7n?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D">“30, Norton Rd, Mandavelipakkam, Raja Annamalai Puram, Chennai, Tamil Nadu 600028“</a>
                     </p>
