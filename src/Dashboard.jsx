@@ -9,6 +9,8 @@ import CursorConnector from './components/CursorConnector';
 import NetworkCanvas from './components/NetworkCanvas';
 import NodeConnections from './components/NodeConnections';
 import NodeConnections1 from './components/NodeConnection1';
+import NodeConnections4 from './components/NodeConnections4';
+import RadiantGridBackground from './components/RadiantGridBackground';
 
 
 
@@ -19,7 +21,9 @@ const Dashboard = () => {
       {/* <CursorConnector /> */}
       {/* <NetworkCanvas /> */}
       {/* <NodeConnections /> */}
-      <NodeConnections1 />
+      {/* <NodeConnections1 /> */}
+      {/* <NodeConnections4 /> */}
+      <RadiantGridBackground />
       <Header />
         <Outlet />
       <Footer/>
