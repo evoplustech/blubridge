@@ -61,7 +61,7 @@ const HomePage = () => {
             </p> */}
             </motion.div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200/50">
+                <div className="rounded-xl p-6 shadow-lg border border-gray-200/50" style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
                  {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
                     <ul className='models'>

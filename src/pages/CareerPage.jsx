@@ -20,6 +20,9 @@ const CareerPage = () => {
         </div>
     </section>
     <section className="px-1 sm:px-2 mb-14 py-0">
+      <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text text-center mt-3" style={{lineHeight: '1.2'}}>  
+            Join Us
+          </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
