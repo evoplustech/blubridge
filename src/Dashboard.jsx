@@ -11,6 +11,7 @@ import NodeConnections from './components/NodeConnections';
 import NodeConnections1 from './components/NodeConnection1';
 import NodeConnections4 from './components/NodeConnections4';
 import RadiantGridBackground from './components/RadiantGridBackground';
+import NodeConnection2 from './components/NodeConnection2';
 
 
 
@@ -23,7 +24,8 @@ const Dashboard = () => {
       {/* <NodeConnections /> */}
       {/* <NodeConnections1 /> */}
       {/* <NodeConnections4 /> */}
-      <RadiantGridBackground />
+      <NodeConnection2 />
+      {/* <RadiantGridBackground /> */}
       <Header />
         <Outlet />
       <Footer/>
