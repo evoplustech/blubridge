@@ -20,8 +20,8 @@ const Dashboard = () => {
       {/* <CursorConnector /> */}
       {/* <NetworkCanvas /> */}
       {/* <NodeConnections /> */}
-      {/* <NodeConnections1 /> */}
-      <NodeConnection2 />
+      <NodeConnections1 />
+      {/* <NodeConnection2 /> */}
       <Header />
         <Outlet />
       <Footer/>
