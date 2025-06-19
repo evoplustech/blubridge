@@ -36,13 +36,13 @@ const HomePage = () => {
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
-<div className="grid grid-cols-4 gap-4 fouricon">  
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">  
   <div className='flex flex-col items-center fouriconcol'>
     <div>
     <img src="/images/icon4.png" alt="" className='w-20 mb-2' AlignCenter />
     </div>
     <div>
-    <h3>Scaling laws</h3>
+    <h3 className='font-bold'>Scaling laws</h3>
     </div>
   </div> 
  <div className='flex flex-col items-center fouriconcol'>
@@ -50,7 +50,7 @@ const HomePage = () => {
     <img src="/images/icon3.png" alt="" className='w-20 mb-2' AlignCenter />
     </div>
     <div>
-    <h3>Human Work Output Enhancement</h3>
+    <h3 className='font-bold'>Human Work Output Enhancement</h3>
     </div>
   </div> 
 <div className='flex flex-col items-center fouriconcol'>
@@ -58,7 +58,7 @@ const HomePage = () => {
     <img src="/images/icon2.png" alt="" className='w-20 mb-2' AlignCenter />
     </div>
     <div>
-    <h3>Multimodal Agents</h3>
+    <h3 className='font-bold'>Multimodal Agents</h3>
     </div>
   </div> 
   <div className='flex flex-col items-center fouriconcol'>
@@ -66,7 +66,7 @@ const HomePage = () => {
     <img src="/images/icon1.png" alt="" className='w-20 mb-2' AlignCenter />
     </div>
     <div>
-    <h3>Reinforcement Learning</h3>
+    <h3 className='font-bold'>Reinforcement Learning</h3>
     </div>
   </div> 
 
