@@ -27,10 +27,10 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-            <Link to="/" className="text-black font-medium hover:text-gray-700">Home</Link>
-            <Link to="/Careers" className="text-black font-medium hover:text-gray-700">Careers</Link>
-            <Link to="/Contact" className="text-black font-medium hover:text-gray-700">Contact Us</Link>
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8 mr-12">
+            <Link to="/" className="text-black font-medium hover:text-gray-700">HOME</Link>
+            <Link to="/Careers" className="text-black font-medium hover:text-gray-700">CAREERS</Link>
+            <Link to="/Contact" className="text-black font-medium hover:text-gray-700">CONTACT</Link>
             {/* <Link to="/Partner" className="text-black font-medium hover:text-gray-700">Partner</Link> */}
           </div>
 
@@ -59,9 +59,9 @@ const Header = () => {
               className="absolute top-full left-0 w-full bg-[#efede5] border-t border-[#e6e3d8] z-10 md:hidden shadow-sm"
             >
               <div className="flex flex-col px-4 py-4 space-y-4">
-                <Link to="/" onClick={toggleMobileMenu} className="text-black font-medium">Home</Link>
-                <Link to="/Careers" onClick={toggleMobileMenu} className="text-black font-medium">Careers</Link>
-                <Link to="/Contact" className="text-black font-medium hover:text-gray-700">Contact Us</Link>
+                <Link to="/" onClick={toggleMobileMenu} className="text-black font-medium">HOME</Link>
+                <Link to="/Careers" onClick={toggleMobileMenu} className="text-black font-medium">CAREERS</Link>
+                <Link to="/Contact" className="text-black font-medium hover:text-gray-700">CONTACT</Link>
                 {/* <Link to="/Partner" onClick={toggleMobileMenu} className="text-black font-medium">Partner</Link> */}                
                 {/* <Link to="/Contact" onClick={toggleMobileMenu} className="bg-black text-white py-2 px-4 rounded-lg text-center"> 
                   Contact

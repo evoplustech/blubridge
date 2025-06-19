@@ -11,8 +11,7 @@ const HomePage = () => {
     <main className="relative z-10">
       <section className="px-4 sm:px-6 content-section py-0">
         <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-              {/* BluBridge */}
-              Who we are? What do we want to do?
+              BluBridge
             </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -30,7 +29,7 @@ const HomePage = () => {
             </p> */}
             </motion.div>
 
-                <div className="rounded-xl p-6 shadow-lg border border-gray-200/50" style={{ backgroundColor: '#fffdf7',minHeight:'750px'} }>
+                <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                  {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
                     <ul className='models'>
@@ -47,7 +46,7 @@ const HomePage = () => {
                         Blubridge Technologies Pvt Ltd is an early-stage AI research company based in Chennai, India. Our mission is to develop deep expertise by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model. Our competitive differentiators are foundation model ownership, enhanced adaptability, and strong data privacy assurances.
                       </p> */}
                       <div className='px-4 my-4'>
-                        {/* <h1 className='font-bold text-black mb-4'>Who we are? What do we want to do?</h1> */}
+                        <h1 className='font-bold text-lg text-black mb-4'>Who we are? What do we want to do?</h1>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
@@ -58,7 +57,7 @@ const HomePage = () => {
                           <li>4) Reinforcement Learning</li>
                         </ol>
                         <h1 className='font-bold text-black my-4'>How do we plan to monetise it?</h1>
-                        <p>“An item that is tokenizable is learnable.”</p>
+                        <p className='mb-[4px]'>“An item that is tokenizable is learnable.”</p>
                         <p>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling,
                         complex/large data patterns and/or work output enhancement.</p>
 
