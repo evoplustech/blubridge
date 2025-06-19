@@ -42,7 +42,7 @@ body {
 
 }
 
-.inner-page{ min-height: 650px; background-color: #fffdf7;}
+.inner-page{  background-color: #fffdf7;}
 .inner-content{font-size:1rem; }
 .inner-content a{ text-decoration: underline; }
 .we-are{ font-size:1rem; padding-top:1rem ;border-top:1px solid #dddddd; margin-top:1rem;}
@@ -79,6 +79,16 @@ body {
   transform-origin: left center;
   animation: pulse-connection 6s ease-in-out infinite;
 }
+
+.footer {
+   /* position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   */
+}
+
+.main-inner{ min-height: 650px;}
 
 @keyframes float {
   0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.6; }
@@ -148,6 +158,7 @@ body {
 .react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus{
   background-color: #c6c6c6 !important;
 }
+
 /* Raj code css start - 12-Jun-2025 */
 
 

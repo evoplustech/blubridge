@@ -13,7 +13,7 @@ const HomePage = () => {
         <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
               BluBridge
             </h1>
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ const HomePage = () => {
               Discover the advantages of our unified AI platform, designed for performance, scalability, and ease of use.
             </p> */}
             </motion.div>
-
+              <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                  {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
                     <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
@@ -48,7 +48,8 @@ const HomePage = () => {
                       <div className='px-4 my-4'>
                         <h1 className='font-bold text-lg text-black mb-4'>Who we are? What do we want to do?</h1>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
-                          in large language models by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model.</p>
+                          in large language models by building foundation transformer-based AI models, beginning
+                          with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
                         <ol style={{ marginLeft:'1.5em' }}>
                           <li>1) Scaling laws</li>
@@ -69,19 +70,20 @@ const HomePage = () => {
                         <p style={{ fontWeight: 400, margin: '10px 0px' }}>Follow our work on:</p>
                         <p style={{ fontWeight: 400, margin: '5px 0px' }}>
                           <strong>X (Twitter): </strong>
-                          <a href="https://x.com/BlubridgeAI">
-                            <span style={{ textDecoration: 'underline' }}>https://x.com/Blubridge</span>
+                          <a href="https://x.com/BlubridgeAI" className='text-[#046bd2] underline'>
+                            https://x.com/Blubridge
                           </a>
                         </p>
                         <p style={{ fontWeight: 400 }}>
                           <strong>Youtube: </strong>
-                          <a href="https://www.youtube.com/@blubridge-ai">
-                            <span style={{ textDecoration: 'underline' }}>https://youtube.com/@blubridge</span>
+                          <a href="https://www.youtube.com/@blubridge-ai" className='text-[#046bd2] underline'>
+                            https://youtube.com/@blubridge
                           </a>
                         </p>
                       </div>
 
                 </div>
+              </div>
 
 
           {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 bg-white/60 rounded-xl p-6 shadow-lg border border-gray-200/50">

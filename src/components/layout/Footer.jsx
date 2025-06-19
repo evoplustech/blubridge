@@ -4,7 +4,7 @@ import { Brain } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="relative z-10 px-4 sm:px-6 py-10 sm:py-12 bg-black text-gray-300">
+    <footer className="footer relative z-10 px-2 sm:px-3 py-4 sm:py-6 bg-black text-gray-300">
       <div className="max-w-7xl mx-auto">
         
         <div className=" border-gray-700 text-center">

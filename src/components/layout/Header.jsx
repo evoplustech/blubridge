@@ -19,7 +19,7 @@ const Header = () => {
         className="fixed top-0 left-0 z-20 px-4 sm:px-6 py-4 w-full"
         style={{ backgroundColor: '#efede5', borderBottom: '0.5px solid #e6e3d8' }}
       >
-        <nav className="max-w-7xl mx-auto flex items-center justify-between">
+        <nav className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Link to="/">
               <img src="/images/logo.png" alt="Logo" />
@@ -27,7 +27,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8 mr-12">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <Link to="/" className="text-black font-medium hover:text-gray-700">HOME</Link>
             <Link to="/Careers" className="text-black font-medium hover:text-gray-700">CAREERS</Link>
             <Link to="/Contact" className="text-black font-medium hover:text-gray-700">CONTACT</Link>
