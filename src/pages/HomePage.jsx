@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import FeatureCard from '@/components/FeatureCard';
 import StatCard from '@/components/StatCard';
 import TechnologyStack from '@/components/TechnologyStack';
-import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, BarChart, ShieldCheck, Rocket,Bot,FileAudio,FileImageIcon} from 'lucide-react';
+import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, BarChart, ShieldCheck, Rocket,Bot,FileAudio,FileImageIcon, AlignCenter} from 'lucide-react';
 
 const HomePage = () => {
   return (
@@ -30,41 +30,69 @@ const HomePage = () => {
             </motion.div>
               <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
-                 {/* <strong className='dated'>Dated : 18<sup>th</sup> February, 2025</strong>
-                    <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
-                    <ul className='models'>
-                      <li>Understanding Foundation Models</li>
-                      <li>Creating, Testing & Implementing Models</li>
-                    </ul>
-                    <p className='dedi'>We are dedicated to advancing tokenisation and prediction modelling across three key areas:-</p>
-                    <ul className='models'>
-                      <li>Chatbots</li>
-                      <li>Audio</li>
-                      <li>Images</li>
-                    </ul> */}
-                      {/* <p className='p-4' >
-                        Blubridge Technologies Pvt Ltd is an early-stage AI research company based in Chennai, India. Our mission is to develop deep expertise by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model. Our competitive differentiators are foundation model ownership, enhanced adaptability, and strong data privacy assurances.
-                      </p> */}
-                      <div className='px-4 my-4'>
-                        <h1 className='font-bold text-lg text-black mb-4'>Who we are? What do we want to do?</h1>
+                      <div className='mb-4 content1'>
+                        <h1 className='font-bold text-xl text-black mb-4'>Who we are? What do we want to do?</h1>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
-                        <ol style={{ marginLeft:'1.5em' }}>
-                          <li>1) Scaling laws</li>
-                          <li>2) Human work output enhancement</li>
-                          <li>3) Multimodal Agents</li>
-                          <li>4) Reinforcement Learning</li>
-                        </ol>
-                        <h1 className='font-bold text-black my-4'>How do we plan to monetise it?</h1>
-                        <p className='mb-[4px]'>“An item that is tokenizable is learnable.”</p>
-                        <p>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling,
-                        complex/large data patterns and/or work output enhancement.</p>
+<div className="grid grid-cols-4 gap-4 fouricon">  
+  <div className='flex flex-col items-center fouriconcol'>
+    <div>
+    <img src="/images/icon4.png" alt="" className='w-20 mb-2' AlignCenter />
+    </div>
+    <div>
+    <h3>Scaling laws</h3>
+    </div>
+  </div> 
+ <div className='flex flex-col items-center fouriconcol'>
+    <div>
+    <img src="/images/icon3.png" alt="" className='w-20 mb-2' AlignCenter />
+    </div>
+    <div>
+    <h3>Human Work Output Enhancement</h3>
+    </div>
+  </div> 
+<div className='flex flex-col items-center fouriconcol'>
+    <div>
+    <img src="/images/icon2.png" alt="" className='w-20 mb-2' AlignCenter />
+    </div>
+    <div>
+    <h3>Multimodal Agents</h3>
+    </div>
+  </div> 
+  <div className='flex flex-col items-center fouriconcol'>
+    <div>
+    <img src="/images/icon1.png" alt="" className='w-20 mb-2' AlignCenter />
+    </div>
+    <div>
+    <h3>Reinforcement Learning</h3>
+    </div>
+  </div> 
 
-                      </div>
+  
+</div>  
+                       </div>
+                   
+              <div className='howdowe' style={{ borderTop: '1px solid #eee', marginBottom: '2.5em', margintop:'3em' }}> 
+
+<div class="grid grid-cols-3 gap-4">  
+ 
+ <div class="...">
+  <h1 className='font-bold text-black mb-4 text-3xl'>How do we plan to monetise it?</h1>
+  </div>  
+  <div class="col-span-2 ...">
+ <p className='mb-[4px] font-semibold'>“An item that is tokenizable is learnable.”</p>
+ <p>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling, complex/large data patterns and/or work output enhancement.</p>
+  </div>
+  </div>
+
+                        
+                       
+</div>
                       
-                      <div className='pl-4'>
+                      
+                      <div className=''>
                         <div style={{ borderTop: '1px solid #eee', marginBottom: '1em' }}></div>
                         <h2 className='font-bold text-black mb-4'>Our Social Media Handles</h2>
                         <p style={{ fontWeight: 400, margin: '10px 0px' }}>Follow our work on:</p>
