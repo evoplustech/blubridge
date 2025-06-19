@@ -30,15 +30,16 @@ const Header = () => {
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <Link to="/" className="text-black font-medium hover:text-gray-700">Home</Link>
             <Link to="/Careers" className="text-black font-medium hover:text-gray-700">Careers</Link>
-            <Link to="/Partner" className="text-black font-medium hover:text-gray-700">Partner</Link>
+            <Link to="/Contact" className="text-black font-medium hover:text-gray-700">Contact Us</Link>
+            {/* <Link to="/Partner" className="text-black font-medium hover:text-gray-700">Partner</Link> */}
           </div>
 
           {/* Contact Button */}
-          <div className="hidden md:flex items-center space-x-3">
+          {/* <div className="hidden md:flex items-center space-x-3">
             <Link to="/Contact" className="bg-black hover:bg-gray-800 text-white px-4 sm:px-6 py-2 rounded-lg">
               Contact
             </Link>
-          </div>
+          </div> */}
 
           {/* Hamburger Icon */}
           <div className="md:hidden">
@@ -60,10 +61,11 @@ const Header = () => {
               <div className="flex flex-col px-4 py-4 space-y-4">
                 <Link to="/" onClick={toggleMobileMenu} className="text-black font-medium">Home</Link>
                 <Link to="/Careers" onClick={toggleMobileMenu} className="text-black font-medium">Careers</Link>
-                <Link to="/Partner" onClick={toggleMobileMenu} className="text-black font-medium">Partner</Link>
-                <Link to="/Contact" onClick={toggleMobileMenu} className="bg-black text-white py-2 px-4 rounded-lg text-center">
+                <Link to="/Contact" className="text-black font-medium hover:text-gray-700">Contact Us</Link>
+                {/* <Link to="/Partner" onClick={toggleMobileMenu} className="text-black font-medium">Partner</Link> */}                
+                {/* <Link to="/Contact" onClick={toggleMobileMenu} className="bg-black text-white py-2 px-4 rounded-lg text-center"> 
                   Contact
-                </Link>
+                </Link>*/}
               </div>
             </motion.div>
           )}
