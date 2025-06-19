@@ -11,7 +11,8 @@ const HomePage = () => {
     <main className="relative z-10">
       <section className="px-4 sm:px-6 content-section py-0">
         <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-              BluBridge
+              {/* BluBridge */}
+              Who we are? What do we want to do?
             </h1>
         <div className="max-w-7xl mx-auto">
           <motion.div
@@ -42,11 +43,11 @@ const HomePage = () => {
                       <li>Audio</li>
                       <li>Images</li>
                     </ul> */}
-                      <p className='p-4' >
+                      {/* <p className='p-4' >
                         Blubridge Technologies Pvt Ltd is an early-stage AI research company based in Chennai, India. Our mission is to develop deep expertise by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model. Our competitive differentiators are foundation model ownership, enhanced adaptability, and strong data privacy assurances.
-                      </p>
-                      <div className='px-4 mb-4'>
-                        <h1 className='font-bold text-black mb-4'>Who we are? What do we want to do?</h1>
+                      </p> */}
+                      <div className='px-4 my-4'>
+                        {/* <h1 className='font-bold text-black mb-4'>Who we are? What do we want to do?</h1> */}
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
