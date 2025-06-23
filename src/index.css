@@ -45,12 +45,24 @@ body {
 .content1 {
    text-align: center;
 }
+
+.content2 {
+   text-align: left;
+}
 .howdowe {
   margin-top: 2.5rem;
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
 }
+.howdowe1 {
+  margin-top: 2.5rem;
+  padding-top: 0.75rem;
+}
+.subhead{ text-align: left; font-size: 13px; list-style-type: disc;}
+.subhead img{margin-right: 0.75rem;}
 
-.fouriconcol{background-color: #f3f1e9;border: 0.5px solid #e3e0d4; border-radius: 15px;padding: 25px;}
+.fouriconcol{background-color: #f3f1e9;border: 0px solid #e3e0d4; border-radius: 200px 0 100px 200px;padding: 15px 20px;}
+
+.fouriconcol1{background-color: #f8f6f0;border: 0px solid #e3e0d4; border-radius: 200px 0 100px 200px;padding: 15px 20px; margin-bottom: 10px;}
 .fouricon{ margin-top: 20px;}
 
 .fouricon div img{ text-align: center;}
@@ -62,7 +74,8 @@ body {
 .we-are{ font-size:1rem; padding-top:1rem ;border-top:1px solid #dddddd; margin-top:1rem;}
 .dedi{font-size:1rem; padding-top:1rem }
 .dated{ font-size:1rem; }
-
+.left-img{ text-align: center;}
+.left-img img{ width: 199px; margin: 0 auto; }
 .models{font-size:1rem; }
 .models{ padding-left:1rem; padding-top: 0.75rem; }
 .models li{ list-style: disc; line-height: 35px; }

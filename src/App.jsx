@@ -10,6 +10,8 @@ import CareerPage from './pages/CareerPage';
 import PartnerPage from './pages/PartnerPage';
 import ContactPage from './pages/ContactPage';
 import ContactUsPage from './pages/ContactUsPage';
+import HomePage1 from './pages/HomePage1';
+import HomePage2 from './pages/HomePage2';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
        <Route path="/" element={<Dashboard/>}>
           {/* Default child route for /dashboard (e.g., a welcome page) */}
           <Route index element={<HomePage />} />
+          <Route path="/Home1" element={<HomePage1/>} />
+          <Route path="/Home2" element={<HomePage2/>} />
           <Route path="/Careers" element={<CareerPage />} />
           <Route path="/Partner" element={<PartnerPage />} />
           {/* <Route path="/Contact" element={<ContactPage />} /> */}

@@ -1,0 +1,228 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Button } from '@/components/ui/button';
+import FeatureCard from '@/components/FeatureCard';
+import StatCard from '@/components/StatCard';
+import TechnologyStack from '@/components/TechnologyStack';
+import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, BarChart, ShieldCheck, Rocket,Bot,FileAudio,FileImageIcon, AlignCenter} from 'lucide-react';
+
+const HomePage2 = () => {
+  return (
+     <main className="relative z-10">
+          <section className="px-4 sm:px-6 content-section py-0">
+             <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
+                  BluBridge
+                </h1> 
+            <div className="max-w-6xl mx-auto">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.3 }}
+                transition={{ duration: 0.6 }}
+                className="text-center"
+              >
+                {/* <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-black">
+                  Why BluBridge AI?
+                </h2>
+                <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                  Discover the advantages of our unified AI platform, designed for performance, scalability, and ease of use.
+                </p> */}
+                </motion.div>
+                  <div className='main-inner'>
+                    <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
+                          <div className='mb-4 content2'>
+                            <h1 className='font-bold text-3xl text-black mb-4'>Who we are? What do we want to do?</h1>
+                            <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
+                              in large language models by building foundation transformer-based AI models, beginning
+                              with a practical, scalable 7B parameter base model.</p>
+                            <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
+    <div className="">  
+      <div className='flex-col items-center fouriconcol1'>
+        {/* <div>
+        <img src="/images/icon4.png" alt="" className='w-20 mb-2' AlignCenter />
+        </div> */}
+        <div>
+        <h3 className='font-bold subhead1 flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJyYWluLWNpcmN1aXQtaWNvbiBsdWNpZGUtYnJhaW4tY2lyY3VpdCI+PHBhdGggZD0iTTEyIDVhMyAzIDAgMSAwLTUuOTk3LjEyNSA0IDQgMCAwIDAtMi41MjYgNS43NyA0IDQgMCAwIDAgLjU1NiA2LjU4OEE0IDQgMCAxIDAgMTIgMThaIi8+PHBhdGggZD0iTTkgMTNhNC41IDQuNSAwIDAgMCAzLTQiLz48cGF0aCBkPSJNNi4wMDMgNS4xMjVBMyAzIDAgMCAwIDYuNDAxIDYuNSIvPjxwYXRoIGQ9Ik0zLjQ3NyAxMC44OTZhNCA0IDAgMCAxIC41ODUtLjM5NiIvPjxwYXRoIGQ9Ik02IDE4YTQgNCAwIDAgMS0xLjk2Ny0uNTE2Ii8+PHBhdGggZD0iTTEyIDEzaDQiLz48cGF0aCBkPSJNMTIgMThoNmEyIDIgMCAwIDEgMiAydjEiLz48cGF0aCBkPSJNMTIgOGg4Ii8+PHBhdGggZD0iTTE2IDhWNWEyIDIgMCAwIDEgMi0yIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxMyIgcj0iLjUiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjMiIHI9Ii41Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMSIgcj0iLjUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjgiIHI9Ii41Ii8+PC9zdmc+'></img>&nbsp;&nbsp;Scaling laws</h3>
+        </div>
+      </div> 
+     <div className='flex-col items-center fouriconcol1'>
+        {/* <div>
+        <img src="/images/icon3.png" alt="" className='w-20 mb-2' AlignCenter />
+        </div> */}
+        <div>
+        <h3 className='font-bold subhead1 flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJyYWluLWNpcmN1aXQtaWNvbiBsdWNpZGUtYnJhaW4tY2lyY3VpdCI+PHBhdGggZD0iTTEyIDVhMyAzIDAgMSAwLTUuOTk3LjEyNSA0IDQgMCAwIDAtMi41MjYgNS43NyA0IDQgMCAwIDAgLjU1NiA2LjU4OEE0IDQgMCAxIDAgMTIgMThaIi8+PHBhdGggZD0iTTkgMTNhNC41IDQuNSAwIDAgMCAzLTQiLz48cGF0aCBkPSJNNi4wMDMgNS4xMjVBMyAzIDAgMCAwIDYuNDAxIDYuNSIvPjxwYXRoIGQ9Ik0zLjQ3NyAxMC44OTZhNCA0IDAgMCAxIC41ODUtLjM5NiIvPjxwYXRoIGQ9Ik02IDE4YTQgNCAwIDAgMS0xLjk2Ny0uNTE2Ii8+PHBhdGggZD0iTTEyIDEzaDQiLz48cGF0aCBkPSJNMTIgMThoNmEyIDIgMCAwIDEgMiAydjEiLz48cGF0aCBkPSJNMTIgOGg4Ii8+PHBhdGggZD0iTTE2IDhWNWEyIDIgMCAwIDEgMi0yIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxMyIgcj0iLjUiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjMiIHI9Ii41Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMSIgcj0iLjUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjgiIHI9Ii41Ii8+PC9zdmc+'></img>&nbsp;&nbsp;Human Productivity Boost</h3>
+        </div>
+      </div> 
+    <div className='flex-col items-center fouriconcol1'>
+        {/* <div>
+        <img src="/images/icon2.png" alt="" className='w-20 mb-2' AlignCenter />
+        </div> */}
+        <div>
+        <h3 className='font-bold subhead1 flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJyYWluLWNpcmN1aXQtaWNvbiBsdWNpZGUtYnJhaW4tY2lyY3VpdCI+PHBhdGggZD0iTTEyIDVhMyAzIDAgMSAwLTUuOTk3LjEyNSA0IDQgMCAwIDAtMi41MjYgNS43NyA0IDQgMCAwIDAgLjU1NiA2LjU4OEE0IDQgMCAxIDAgMTIgMThaIi8+PHBhdGggZD0iTTkgMTNhNC41IDQuNSAwIDAgMCAzLTQiLz48cGF0aCBkPSJNNi4wMDMgNS4xMjVBMyAzIDAgMCAwIDYuNDAxIDYuNSIvPjxwYXRoIGQ9Ik0zLjQ3NyAxMC44OTZhNCA0IDAgMCAxIC41ODUtLjM5NiIvPjxwYXRoIGQ9Ik02IDE4YTQgNCAwIDAgMS0xLjk2Ny0uNTE2Ii8+PHBhdGggZD0iTTEyIDEzaDQiLz48cGF0aCBkPSJNMTIgMThoNmEyIDIgMCAwIDEgMiAydjEiLz48cGF0aCBkPSJNMTIgOGg4Ii8+PHBhdGggZD0iTTE2IDhWNWEyIDIgMCAwIDEgMi0yIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxMyIgcj0iLjUiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjMiIHI9Ii41Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMSIgcj0iLjUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjgiIHI9Ii41Ii8+PC9zdmc+'></img>&nbsp;&nbsp;Multimodal Agents</h3>
+        </div>
+      </div> 
+      <div className='flex-col items-center fouriconcol1'>
+        {/* <div>
+        <img src="/images/icon1.png" alt="" className='w-20 mb-2' AlignCenter />
+        </div> */}
+        <div>
+        <h3 className='font-bold subhead1 flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJyYWluLWNpcmN1aXQtaWNvbiBsdWNpZGUtYnJhaW4tY2lyY3VpdCI+PHBhdGggZD0iTTEyIDVhMyAzIDAgMSAwLTUuOTk3LjEyNSA0IDQgMCAwIDAtMi41MjYgNS43NyA0IDQgMCAwIDAgLjU1NiA2LjU4OEE0IDQgMCAxIDAgMTIgMThaIi8+PHBhdGggZD0iTTkgMTNhNC41IDQuNSAwIDAgMCAzLTQiLz48cGF0aCBkPSJNNi4wMDMgNS4xMjVBMyAzIDAgMCAwIDYuNDAxIDYuNSIvPjxwYXRoIGQ9Ik0zLjQ3NyAxMC44OTZhNCA0IDAgMCAxIC41ODUtLjM5NiIvPjxwYXRoIGQ9Ik02IDE4YTQgNCAwIDAgMS0xLjk2Ny0uNTE2Ii8+PHBhdGggZD0iTTEyIDEzaDQiLz48cGF0aCBkPSJNMTIgMThoNmEyIDIgMCAwIDEgMiAydjEiLz48cGF0aCBkPSJNMTIgOGg4Ii8+PHBhdGggZD0iTTE2IDhWNWEyIDIgMCAwIDEgMi0yIi8+PGNpcmNsZSBjeD0iMTYiIGN5PSIxMyIgcj0iLjUiLz48Y2lyY2xlIGN4PSIxOCIgY3k9IjMiIHI9Ii41Ii8+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMSIgcj0iLjUiLz48Y2lyY2xlIGN4PSIyMCIgY3k9IjgiIHI9Ii41Ii8+PC9zdmc+'></img>&nbsp;&nbsp;Reinforcement Learning</h3>
+        </div>
+      </div> 
+    
+      
+    </div>  
+                           </div>
+                       
+                  <div className='howdowe1' style={{ borderTop: '1px solid #eee', marginBottom: '2.5em', margintop:'3em' }}> 
+    
+    <div class="grid grid-cols-1 gap-4">  
+     
+     <div class="left-img">
+     {/* <img src='images/how.png' alt='LLM' className='' /> */}
+      </div>  
+      <div class="col-span-2">
+         <h1 className='font-bold text-black mb-4 text-3xl'>How do we plan to monetise it?</h1>
+     <p className='mb-[4px] font-semibold'>“An item that is tokenizable is learnable.”</p>
+     <p>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling, complex/large data patterns and/or work output enhancement.</p>
+      </div>
+      </div>
+    
+                            
+                           
+    </div>
+                          
+                          
+                          <div className=''>
+                            <div style={{ borderTop: '1px solid #eee', marginBottom: '1em' }}></div>
+                            <h2 className='font-bold text-black mb-4'>Our Social Media Handles</h2>
+                            <p style={{ fontWeight: 400, margin: '10px 0px' }}>Follow our work on:</p>
+                            <p style={{ fontWeight: 400, margin: '5px 0px' }}>
+                              <strong>X (Twitter): </strong>
+                              <a href="https://x.com/BlubridgeAI" className='text-[#046bd2] underline'>
+                                https://x.com/Blubridge
+                              </a>
+                            </p>
+                            <p style={{ fontWeight: 400 }}>
+                              <strong>Youtube: </strong>
+                              <a href="https://www.youtube.com/@blubridge-ai" className='text-[#046bd2] underline'>
+                                https://youtube.com/@blubridge
+                              </a>
+                            </p>
+                          </div>
+    
+                    </div>
+                  </div>
+    
+    
+              {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 bg-white/60 rounded-xl p-6 shadow-lg border border-gray-200/50">
+                 <div className="grid-item p-6 h-full flex flex-col pr-0 ">
+                    <p className='we-are'>We are an aspiring Large Language Model (LLM) research company founded on 15<sup>th</sup> February 2025. The scope of research, we wish to undertake is into the following disciplines:</p>
+                 </div>
+                 <div className="grid-item bg-[#f3f1e9] backdrop-blur-md p-7 pb-0 rounded-xl border border-gray-300/50 h-full flex flex-col">   
+                    <h3 class="text-xl font-semibold mb-2 text-gray-900">Understanding Foundation Models</h3><p class="text-gray-600 leading-relaxed">Foundation models are large AI systems trained on vast datasets, adaptable across multiple tasks and applications as building blocks.</p>
+                 </div>
+                 <div className="grid-item bg-[#f3f1e9] backdrop-blur-md p-6 rounded-xl border border-gray-300/50 h-full flex flex-col">
+                     <h3 class="text-xl font-semibold mb-2 text-gray-900">Creating, Testing & Implementing Models</h3><p class="text-gray-600 leading-relaxed">Creating, testing and implementing models involves problem definition, data collection, model design, deployment, and monitoring stages. </p>
+                 </div>
+           
+       
+     
+    
+    
+                <FeatureCard
+                  icon={Lightbulb}
+                  title="Innovative Solutions"
+                  description="Access cutting-edge AI models and tools to solve complex business challenges and drive innovation."
+                  delay={0.1}
+                />
+                <FeatureCard
+                  icon={BarChart}
+                  title="Actionable Insights"
+                  description="Transform raw data into clear, actionable insights that inform strategic decision-making."
+                  delay={0.2}
+                />
+                <FeatureCard
+                  icon={ShieldCheck}
+                  title="Robust Security"
+                  description="Ensure data integrity and compliance with enterprise-grade security features and protocols."
+                  delay={0.3}
+                />
+                <FeatureCard
+                  icon={Rocket}
+                  title="Scalable Infrastructure"
+                  description="Effortlessly scale your AI operations with our flexible and powerful cloud-based infrastructure."
+                  delay={0.4}
+                />
+                <FeatureCard
+                  icon={Zap}
+                  title="Rapid Deployment"
+                  description="Accelerate your time-to-market with streamlined workflows and rapid model deployment capabilities."
+                  delay={0.5}
+                />
+                <FeatureCard
+                  icon={Users}
+                  title="Collaborative Environment"
+                  description="Foster teamwork and enhance productivity with a shared workspace for data scientists and developers."
+                  delay={0.6}
+                /> 
+              </div> */}
+            </div>
+          </section>
+    
+    
+          
+    
+         {/* <TechnologyStack />
+           <section className="content-section desksec">
+              <div className="max-w-7xl mx-auto">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-center mb-4 sm:mb-8"
+                >
+                  <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-black">
+                    Our Research Roadmap
+                  </h2>
+                  <p className="text-lg sm:text-l text-gray-600 max-w-3xl mx-auto">
+                    Drawing from the teachings and workings of many legendary figures whose research is openly available, we will begin our journey with the following:
+                  </p>
+                </motion.div>
+              <img src="/images/roadmap.png" alt="Research Roadmap" className="w-full h-auto rounded-lg " />
+                </div>
+              </section> */}
+          
+          
+    
+          {/* <section className="px-4 sm:px-6 content-section-tight mb-12">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6 }}
+              className="max-w-4xl mx-auto text-center bg-white/70 backdrop-blur-md rounded-2xl p-8 sm:p-12 shadow-xl border border-gray-200/40"
+            >
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-black">
+                Create the future of AI—responsibly.
+              </h2>
+              <p className="text-lg sm:text-xl text-gray-600 mb-8">
+               Be part of a team redefining AI with a focus on safety, responsibility, and long-term progress.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-base sm:text-lg">
+                  Start Your Journey
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <Button variant="outline" size="lg" className="px-8 py-3 text-base sm:text-lg border-black text-black hover:bg-black hover:text-white">
+                  Contact Sales
+                </Button>
+              </div>
+            </motion.div>
+          </section> */}
+        </main>
+  );
+}
+
+export default HomePage2

@@ -6,12 +6,12 @@ import StatCard from '@/components/StatCard';
 import TechnologyStack from '@/components/TechnologyStack';
 import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, BarChart, ShieldCheck, Rocket,Bot,FileAudio,FileImageIcon, AlignCenter} from 'lucide-react';
 
-const HomePage1 = () => {
+const HomePage = () => {
   return (
     <main className="relative z-10">
       <section className="px-4 sm:px-6 content-section py-0">
          <h1 className="text-3xl text-center mb-4 sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>
-           
+              BluBridge
             </h1> 
         <div className="max-w-6xl mx-auto">
           <motion.div
@@ -30,43 +30,43 @@ const HomePage1 = () => {
             </motion.div>
               <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
-                      <div className='mb-4 content2'>
-                        <h1 className='font-bold text-3xl text-black mb-4 text-center'>Who we are? What do we want to do?</h1>
+                      <div className='mb-4 content1'>
+                        <h1 className='font-bold text-3xl text-black mb-4'>Who we are? What do we want to do?</h1>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
                         <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
-<div className="">  
-  <div className='flex-col items-center fouriconcol1'>
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">  
+  <div className='flex-col items-center fouriconcol'>
     {/* <div>
     <img src="/images/icon4.png" alt="" className='w-20 mb-2' AlignCenter />
     </div> */}
     <div>
-    <h3 className='font-bold subhead1 flex'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right-icon lucide-chevrons-right"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>&nbsp;&nbsp;Scaling laws</h3>
+    <h3 className='font-bold subhead flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXJlZG8yLWljb24gbHVjaWRlLXJlZG8tMiI+PHBhdGggZD0ibTE1IDE0IDUtNS01LTUiLz48cGF0aCBkPSJNMjAgOUg5LjVBNS41IDUuNSAwIDAgMCA0IDE0LjVBNS41IDUuNSAwIDAgMCA5LjUgMjBIMTMiLz48L3N2Zz4='></img>Scaling laws</h3>
     </div>
   </div> 
- <div className='flex-col items-center fouriconcol1'>
+ <div className='flex-col items-center fouriconcol'>
     {/* <div>
     <img src="/images/icon3.png" alt="" className='w-20 mb-2' AlignCenter />
     </div> */}
     <div>
-    <h3 className='font-bold subhead1 flex'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right-icon lucide-chevrons-right"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>&nbsp;&nbsp;Human Productivity Boost</h3>
+    <h3 className='font-bold subhead flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXJlZG8yLWljb24gbHVjaWRlLXJlZG8tMiI+PHBhdGggZD0ibTE1IDE0IDUtNS01LTUiLz48cGF0aCBkPSJNMjAgOUg5LjVBNS41IDUuNSAwIDAgMCA0IDE0LjVBNS41IDUuNSAwIDAgMCA5LjUgMjBIMTMiLz48L3N2Zz4='></img>Human Productivity Boost</h3>
     </div>
   </div> 
-<div className='flex-col items-center fouriconcol1'>
+<div className='flex-col items-center fouriconcol'>
     {/* <div>
     <img src="/images/icon2.png" alt="" className='w-20 mb-2' AlignCenter />
     </div> */}
     <div>
-    <h3 className='font-bold subhead1 flex'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right-icon lucide-chevrons-right"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>&nbsp;&nbsp;Multimodal Agents</h3>
+    <h3 className='font-bold subhead flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXJlZG8yLWljb24gbHVjaWRlLXJlZG8tMiI+PHBhdGggZD0ibTE1IDE0IDUtNS01LTUiLz48cGF0aCBkPSJNMjAgOUg5LjVBNS41IDUuNSAwIDAgMCA0IDE0LjVBNS41IDUuNSAwIDAgMCA5LjUgMjBIMTMiLz48L3N2Zz4='></img>Multimodal Agents</h3>
     </div>
   </div> 
-  <div className='flex-col items-center fouriconcol1'>
+  <div className='flex-col items-center fouriconcol'>
     {/* <div>
     <img src="/images/icon1.png" alt="" className='w-20 mb-2' AlignCenter />
     </div> */}
     <div>
-    <h3 className='font-bold subhead1 flex'><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevrons-right-icon lucide-chevrons-right"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>&nbsp;&nbsp;Reinforcement Learning</h3>
+    <h3 className='font-bold subhead flex'><img src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXJlZG8yLWljb24gbHVjaWRlLXJlZG8tMiI+PHBhdGggZD0ibTE1IDE0IDUtNS01LTUiLz48cGF0aCBkPSJNMjAgOUg5LjVBNS41IDUuNSAwIDAgMCA0IDE0LjVBNS41IDUuNSAwIDAgMCA5LjUgMjBIMTMiLz48L3N2Zz4='></img>Reinforcement Learning</h3>
     </div>
   </div> 
 
@@ -74,17 +74,17 @@ const HomePage1 = () => {
 </div>  
                        </div>
                    
-              <div className='howdowe1' style={{ borderTop: '1px solid #eee', marginBottom: '1.5em', margintop:'3em' }}> 
+              <div className='howdowe' style={{ borderTop: '1px solid #eee', marginBottom: '2.5em', margintop:'3em' }}> 
 
 <div class="grid grid-cols-1 gap-4">  
  
  <div class="left-img">
  {/* <img src='images/how.png' alt='LLM' className='' /> */}
   </div>  
-  <div class="col-span-2">
+  <div class="col-span-2 text-center">
      <h1 className='font-bold text-black mb-4 text-3xl'>How do we plan to monetise it?</h1>
  <p className='mb-[4px] font-semibold'>“An item that is tokenizable is learnable.”</p>
- <p className='pt-2'>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling, complex/large data patterns and/or work output enhancement.</p>
+ <p>We look forward to leveraging our expertise in deep learning as consultants for businesses, governments or an agency/body seeking deep expertise in predictive modelling, complex/large data patterns and/or work output enhancement.</p>
   </div>
   </div>
 
@@ -223,6 +223,6 @@ const HomePage1 = () => {
       </section> */}
     </main>
   );
-}
+};
 
-export default HomePage1
+export default HomePage;
