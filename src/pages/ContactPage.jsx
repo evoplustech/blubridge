@@ -6,7 +6,7 @@ const ContactPage = () => {
     <div>
 
     <section className="px-4 sm:px-6 flex items-center pt-3 pb-3">
-               <div className="max-w-6xl mx-auto text-center">
+               <div className="max-w-5xl mx-auto text-center">
                  <motion.div
                    initial={{ opacity: 0, y: 30 }}
                    animate={{ opacity: 1, y: 0 }}
@@ -14,7 +14,7 @@ const ContactPage = () => {
                    className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
                  >
                    <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text" style={{lineHeight: '1.2'}}>  
-                    Contact Us
+                    Contact Us  
                    </h1>
                  </motion.div>
                </div>

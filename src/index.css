@@ -56,6 +56,9 @@ body {
 .fouricon div img{ text-align: center;}
 .fouricon h3{ font-weight: bold;}
 
+.research-list{margin-top: 1rem;  margin-left: 1rem; }
+.research-list li{ list-style: disc;}
+
 .inner-page{  background-color: #fffdf7;}
 .inner-content{font-size:1rem; }
 .inner-content a{ text-decoration: underline; }
@@ -100,6 +103,11 @@ body {
    bottom: 0;
    width: 100%;
    */
+}
+
+.matrixrain {
+  width: 100%;
+  margin-top: 0rem;
 }
 
 .main-inner{ min-height: 650px;}

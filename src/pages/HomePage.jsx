@@ -5,6 +5,7 @@ import FeatureCard from '@/components/FeatureCard';
 import StatCard from '@/components/StatCard';
 import TechnologyStack from '@/components/TechnologyStack';
 import { Brain, Zap, Database, Users, ArrowRight, Play, CheckCircle, Lightbulb, BarChart, ShieldCheck, Rocket,Bot,FileAudio,FileImageIcon, AlignCenter} from 'lucide-react';
+import MatrixRain from './MatrixRain';
 
 const HomePage = () => {
   return (
@@ -31,48 +32,32 @@ const HomePage = () => {
               <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                       <div className='mb-4 content1'>
-                        <h1 className='font-bold text-xl text-black mb-4'>Who we are? What do we want to do?</h1>
+                        <h1 className='font-bold text-3xl text-black mb-4'>Who we are? What do we want to do?</h1>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
-                        <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">  
-  <div className='flex flex-col items-center fouriconcol'>
-    <div>
-    <img src="/images/icon4.png" alt="" className='w-20 mb-2' AlignCenter />
-    </div>
-    <div>
-    <h3 className='font-bold'>Scaling laws</h3>
-    </div>
+                       
+                        </div>
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-8 mt-8"  style={{ borderTop: '1px solid #eee', marginBottom: '2.5em', margintop:'' }}>  
+  <div className='items-left text-left'>
+   <h2 className='font-bold text-xl'>Our Primary area of Research and Engineering is in :</h2>
+   <ul className='research-list'>
+    <li>Scaling laws</li>
+    <li>Human Productivity Boost</li>
+    <li>Multimodal Agents</li>
+    <li>Reinforcement Learning</li>
+   </ul>
   </div> 
- <div className='flex flex-col items-center fouriconcol'>
-    <div>
-    <img src="/images/icon3.png" alt="" className='w-20 mb-2' AlignCenter />
-    </div>
-    <div>
-    <h3 className='font-bold'>Human Work Output Enhancement</h3>
-    </div>
-  </div> 
-<div className='flex flex-col items-center fouriconcol'>
-    <div>
-    <img src="/images/icon2.png" alt="" className='w-20 mb-2' AlignCenter />
-    </div>
-    <div>
-    <h3 className='font-bold'>Multimodal Agents</h3>
-    </div>
-  </div> 
-  <div className='flex flex-col items-center fouriconcol'>
-    <div>
-    <img src="/images/icon1.png" alt="" className='w-20 mb-2' AlignCenter />
-    </div>
-    <div>
-    <h3 className='font-bold'>Reinforcement Learning</h3>
-    </div>
+ <div className='flex flex-col items-center matrixrain'>
+   {/* <p>Matric</p> */}
+    <MatrixRain />
   </div> 
 
   
+
+  
 </div>  
-                       </div>
+                      
                    
               <div className='howdowe' style={{ borderTop: '1px solid #eee', marginBottom: '2.5em', margintop:'3em' }}> 
 
