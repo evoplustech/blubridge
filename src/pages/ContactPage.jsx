@@ -13,7 +13,7 @@ const ContactPage = () => {
                    transition={{ duration: 0.8, delay: 0.2 }}
                    className="hero-glow rounded-3xl p-2 py-0 sm:p-1 sm:pb-0" 
                  >
-                   <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold mb-6 gradient-text" style={{lineHeight: '1.2'}}>  
+                   <h1 className="text-3xl sm:text-3xl md:text-4xl font-bold gradient-text" style={{lineHeight: '1.2'}}>  
                     Contact Us
                    </h1>
                  </motion.div>
