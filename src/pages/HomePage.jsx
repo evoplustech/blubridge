@@ -79,7 +79,7 @@ const HomePage = () => {
 <div class="grid grid-cols-3 gap-4">  
  
  <div class="...">
-  <h1 className='font-bold text-black mb-4 text-3xl'>How do we plan to monetise it?</h1>
+  <h1 className='font-bold text-black mb-4 text-3xl how-do-we'>How do we plan to monetise it?</h1>
   </div>  
   <div class="col-span-2 ...">
  <p className='mb-[4px] font-semibold'>“An item that is tokenizable is learnable.”</p>
