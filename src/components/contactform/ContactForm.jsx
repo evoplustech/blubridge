@@ -129,7 +129,7 @@ const ContactForm = () => {
               value={formData.firstName}
               onChange={handleChange}
               required
-              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400 con-input"
             />
           </div>
           <div>
@@ -140,7 +140,7 @@ const ContactForm = () => {
               value={formData.lastName}
               onChange={handleChange}
               required
-              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400 con-input"
             />
           </div>
         </div>
@@ -156,7 +156,7 @@ const ContactForm = () => {
               onChange={handleChange}
               disabled={otpVerified}
               required
-              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400 con-input"
             />
           </div>
           <button
@@ -180,7 +180,7 @@ const ContactForm = () => {
                 value={formData.otp}
                 onChange={handleChange}
                 required
-                className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400"
+                className="w-full border rounded-3xl px-4 py-[0.25rem] border-gray-400 con-input"
               />
             </div>
             <button
@@ -213,7 +213,7 @@ const ContactForm = () => {
               value={formData.inquiryType}
               onChange={handleChange}
               required
-              className="w-full border rounded-3xl px-4 py-[0.25rem]"
+              className="w-full border rounded-3xl px-4 py-[0.25rem] con-select"
             >
               <option value="">Select</option>
               <option value="General Inquiry">General Inquiry</option>
@@ -234,7 +234,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full border px-4 py-2 rounded-3xl border-gray-400"
+            className="w-full border px-4 py-2 rounded-3xl border-gray-400 con-input"
           />
         </div>
 
