@@ -17,10 +17,8 @@ function App() {
  
 
   useEffect(() => {
-    if (window.location.hostname === 'blubridge.ai') {
-      window.location.replace('https://www.blubridge.ai' + window.location.pathname);
-    }
     
+
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // ease-out effect
