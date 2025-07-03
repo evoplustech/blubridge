@@ -11,6 +11,7 @@ import PartnerPage from './pages/PartnerPage';
 import ContactPage from './pages/ContactPage';
 import ContactUsPage from './pages/ContactUsPage';
 import Lenis from '@studio-freight/lenis';
+import JoinOurTeam from './pages/JoinOurTeam';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
         <Route path="/" element={<Dashboard />}>
           <Route index element={<HomePage />} />
           <Route path="/Careers" element={<CareerPage />} />
+          <Route path="/join-our-team" element={<JoinOurTeam />} />
           <Route path="/Partner" element={<PartnerPage />} />
           {/* <Route path="/Contact" element={<ContactPage />} /> */}
           <Route path="/Contact" element={<ContactUsPage />} />

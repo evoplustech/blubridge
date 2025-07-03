@@ -20,7 +20,7 @@ const CareerPage = () => {
             
             <div className='main-inner'>
                 <div className="rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
-                    <h1 className='font-bold text-4xl text-black mb-2'>Join Us</h1>
+                    <h1 className='font-bold text-3xl text-black mb-2'>Join Us</h1>
                     <div style={{ borderTop: '1px solid #eee', marginBottom: '1em' }}></div>
 
                     <p className='inner-content'>
@@ -36,11 +36,13 @@ const CareerPage = () => {
                     </ol>
                     {/* <p className='dedi'>Then you might be the perfect fit for our team.</p> */}
                     <h2 className='text-lg font-bold pt-3 text-black'><span className='underline'>How to apply</span>:-</h2>
+                      <p className='dedi'>Before applying, please ensure you read this carefully:</p>
+                      <p className='pt-1'><img style={{ float:'left', marginRight:'7px'}} src='/images/join.png'></img><a href='https://blubridge.com/join-our-team' className='text-[#046bd2] underline pt-2'>Joining Our Research Unit</a></p>
                     <p className='dedi'> You are welcome to walk in for an interview on any working day, or you can reach out to us via:</p>
                     <ul className='models'>
                       <li><strong>Contact Number: </strong> +91 8925817199</li>
                       <li><strong>Email: </strong> careers.chennai@blubridge.com</li>
-                      <li><strong>LinkedIn: </strong><a  className='text-[#046bd2] underline' href='https://www.linkedin.com/company/blubridge/'>https://linkedin.com/blubridge</a></li>
+                      <li><strong>LinkedIn: </strong><a className='text-[#046bd2] underline' href='https://www.linkedin.com/company/blubridge/'>https://linkedin.com/blubridge</a></li>
                     </ul>
                 </div>
                 </div>

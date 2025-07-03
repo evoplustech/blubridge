@@ -92,6 +92,16 @@ body {
 
 }
 
+.subhead{ font-weight: 700;
+  font-size: 1.25em;
+  border-top: 1px solid rgb(238, 238, 238);
+  margin-top: 0.75em;
+  padding-top: 0.75em;}
+
+.faq-list{ list-style: disc; padding-left: 45px;}
+.faq-list li{ line-height: 28px;}
+.faq-list1{ list-style: disclosure-closed; padding-left: 25px;}
+.faq-list1 li{ line-height: 28px; }
 .content1 {
    text-align: center;
 }
