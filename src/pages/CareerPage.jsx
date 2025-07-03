@@ -37,7 +37,7 @@ const CareerPage = () => {
                     {/* <p className='dedi'>Then you might be the perfect fit for our team.</p> */}
                     <h2 className='text-lg font-bold pt-3 text-black'><span className='underline'>How to apply</span>:-</h2>
                       <p className='dedi'>Before applying, please ensure you read this carefully:</p>
-                      <p className='pt-1'><img style={{ float:'left', marginRight:'7px'}} src='/images/join.png'></img><a href='https://blubridge.com/join-our-team' className='text-[#046bd2] underline pt-2'>Joining Our Research Unit</a></p>
+                      <p className='pt-1'><img style={{ float:'left', marginRight:'7px'}} src='/images/join.png'></img><a href='https://blubridge.ai/join-our-team' className='text-[#046bd2] underline pt-2'>Joining Our Research Unit</a></p>
                     <p className='dedi'> You are welcome to walk in for an interview on any working day, or you can reach out to us via:</p>
                     <ul className='models'>
                       <li><strong>Contact Number: </strong> +91 8925817199</li>
