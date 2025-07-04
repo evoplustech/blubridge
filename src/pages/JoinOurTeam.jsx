@@ -54,7 +54,7 @@ If you were to study this in a university:
 <ul className='faq-list1 pt-3'>
 <li>You’d likely go abroad (e.g., the US),</li>
 <li>Pay for a Master’s degree,</li>
-<li>Learn theory without real-world application.</li>
+<li>Learn theory & practical without real-world application.</li>
 </ul>
 </li>
 </ul>
