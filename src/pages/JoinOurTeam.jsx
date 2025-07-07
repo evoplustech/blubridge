@@ -41,7 +41,7 @@ const JoinOurTeam = () => {
          <li>Begin by appearing for the <strong>initial interview rounds.</strong></li>
          <li>If selected, you’ll be invited to a <strong>second stage,</strong> where a strong grasp of Mathematics for Machine Learning is essential.</li>
          <li>You’ll get <strong>up to a month</strong> to prepare.</li>
-         <li >Final selection is based on a <strong>Maths for Machine Learning</strong> test.</li>            
+         <li >Final selection is based on a <strong>Maths for Deep Learning</strong> test.</li>            
 </ul>
 <h3 className='subhead'>e) How is the pay?</h3>
 <p className='pl-6 pt-3'>We offer competitive compensation, but ask you to consider:</p>
