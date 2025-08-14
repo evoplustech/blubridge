@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom';
 
 const CareerPage = () => {
   return (
+    
     <div>
+      <a title="Google Analytics Alternative" href="https://clicky.com/101490753"><img style={{display:"none"}} alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script async data-id="101490753" src="//static.getclicky.com/js"></script>
     <section className="px-1 sm:px-2 mb-14 py-0 mt-2">
         <div className="max-w-6xl mx-auto">
           <motion.div
