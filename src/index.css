@@ -177,6 +177,7 @@ body {
   50% { opacity: 0.6; }
 }
 
+.imgcl{ display: none;}
 
 .gradient-text {
   background: linear-gradient(135deg, #000000, #333333); 

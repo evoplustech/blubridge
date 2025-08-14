@@ -29,9 +29,7 @@ const Header = () => {
         transition={{ duration: 0.6 }}
         className="fixed top-0 left-0 z-20 px-4 sm:px-6 py-4 w-full"
         style={{ backgroundColor: '#efede5', borderBottom: '0.5px solid #e6e3d8' }}
-      > 
-      <a title="GDPR-compliant Web Analytics" href="https://clicky.com/101490741"><img style={{ display: "none" }} alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
-<script async data-id="101490741" src="//static.getclicky.com/js"></script>
+      >
         <nav className="max-w-6xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
