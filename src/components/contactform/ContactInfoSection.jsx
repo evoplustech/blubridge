@@ -29,7 +29,7 @@ const ContactInfoSection = () => {
       {/* Phone */}
       <div>
         <h3 className="text-lg font-semibold mb-1">Phone:</h3>
-        <p>+91 8925817199</p>
+        <p>+91 8925987250</p>
       </div>
 
       {/* Email */}

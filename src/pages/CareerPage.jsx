@@ -44,7 +44,7 @@ const CareerPage = () => {
                       <p className='pt-1'><img style={{ float:'left', marginRight:'7px'}} src='/images/join.png'></img><Link to="/join-our-team"  className="font-medium text-[#046bd2] underline pt-2">Joining Our Research Unit</Link></p>
                     <p className='dedi'> You are welcome to walk in for an interview on any working day, or you can reach out to us via:</p>
                     <ul className='models'>
-                      <li><strong>Contact Number: </strong> +91 8925817199</li>
+                      <li><strong>Contact Number: </strong> +91 8925987250</li>
                       <li><strong>Email: </strong> careers.chennai@blubridge.com</li>
                       <li><strong>LinkedIn: </strong><a className='text-[#046bd2] underline' href='https://www.linkedin.com/company/blubridge/'>https://linkedin.com/blubridge</a></li>
                     </ul>
