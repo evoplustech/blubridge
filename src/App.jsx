@@ -12,6 +12,8 @@ import ContactPage from './pages/ContactPage';
 import ContactUsPage from './pages/ContactUsPage';
 import Lenis from '@studio-freight/lenis';
 import JoinOurTeam from './pages/JoinOurTeam';
+import ResearchPage from './pages/ResearchPage';
+import BluwrepPage from './pages/BluwrepPage';
 
 function App() {
 
@@ -45,6 +47,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />}>
           <Route index element={<HomePage />} />
+          <Route path="/Research" element={<ResearchPage />} />
+          <Route path="/Blu-Werp" element={<BluwrepPage />} />
           <Route path="/Careers" element={<CareerPage />} />
           <Route path="/join-our-team" element={<JoinOurTeam />} />
           <Route path="/Partner" element={<PartnerPage />} />

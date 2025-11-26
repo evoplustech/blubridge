@@ -29,6 +29,7 @@
 		"lucide-react": "^0.285.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-helmet": "^6.1.0",
 		"react-phone-input-2": "^2.15.1",
 		"react-router-dom": "^7.6.2",
 		"react-scroll": "^1.9.3",

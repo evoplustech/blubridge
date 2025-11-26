@@ -41,7 +41,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             <Link to="/" className="text-black font-medium hover:text-gray-700">HOME</Link>
-
+             <Link to="/Research" className="text-black font-medium hover:text-gray-700">RESEARCH</Link>
             {/* Careers with hover-controlled dropdown */}
             <div
               className="relative"

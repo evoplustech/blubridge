@@ -1,9 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
 
 const CareerPage = () => {
   return (
+    <>
+    <Helmet>
+         <title>Careers at Blubridge – Work with Our Deep learning Research Team</title>
+    </Helmet>
+     
     
     <div>
       <a title="Google Analytics Alternative" href="https://clicky.com/101490753"><img style={{display:"none"}} alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
@@ -54,6 +60,7 @@ const CareerPage = () => {
     </section>
 
     </div>
+    </>
   )
 }
 

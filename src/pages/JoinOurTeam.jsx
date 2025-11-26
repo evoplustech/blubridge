@@ -1,8 +1,13 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 
 const JoinOurTeam = () => {
   return (
+     <>
+        <Helmet>
+             <title>Join our Deep Learning Research Team - Blubridge</title>
+        </Helmet>
     <div>
     <section className="px-1 sm:px-2 mb-14 py-0 mt-2">
         <div className="max-w-6xl mx-auto">
@@ -79,6 +84,7 @@ If you were to study this in a university:
     </section>
 
     </div>
+    </>
   )
 }
 

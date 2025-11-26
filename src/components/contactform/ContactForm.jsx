@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import PhoneInput from 'react-phone-input-2';
 import 'react-phone-input-2/lib/style.css';
+import { Helmet } from 'react-helmet';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -111,8 +112,12 @@ const ContactForm = () => {
   };
 
   return (
+    <>
+    <Helmet>
+          <title>Contact Us – Blubridge</title>
+    </Helmet>
     <div className="max-w-4xl lg:px-1 md:px-4 mx-4">
-      <h2 className="text-center text-3xl font-bold mb-8 pt-12">Contact Us</h2>
+      <h1 className="text-center text-3xl font-bold mb-8 pt-12">Contact Us</h1>
 
       {error && <p className="text-red-600 text-center mb-4">{error}</p>}
       {successMessage && <p className="text-green-600 text-center mb-4">{successMessage}</p>}
@@ -249,6 +254,7 @@ const ContactForm = () => {
         </div>
       </form>
     </div>
+    </>
   );
 };
 
