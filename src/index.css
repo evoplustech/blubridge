@@ -365,6 +365,30 @@ body {
     margin: 20px 0;
 }
 
+.paper-btn {
+  background: #b3a17a;
+  color: #ffffff;
+  padding: 10px 25px 10px 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.25s ease-in-out;
+}
+
+.paper-btn:hover {
+    background: #9e8c6b;     /* slight hover effect */
+}
+
+.paper-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;           /* white icon */
+}
+
 .blb-btn {
     background: #ae9b79;       /* Same brown button color */
     color: #ffffff;
