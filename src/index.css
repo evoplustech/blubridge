@@ -92,6 +92,8 @@ body {
 
 }
 
+
+
 .subhead{ font-weight: 700;
   font-size: 1.25em;
   border-top: 1px solid rgb(238, 238, 238);
@@ -491,8 +493,19 @@ body {
 }
 
 /* Mobile responsive */
-@media (max-width: 600px) {
 
+
+@media (max-width: 768px) {
+.main-inner1 {
+  max-width: 100%;
+  
+}}
+
+@media (max-width: 600px) {
+.main-inner1 {
+  max-width: 100%;
+  
+}
     .blb-blog-container {
         padding: 25px 20px;
     }
