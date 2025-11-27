@@ -25,7 +25,7 @@ const JoinOurTeam = () => {
             
             <div className='main-inner'>
                 <div className="rounded-xl p-8 px-9 shadow-lg border border-gray-200/50 inner-page">
-                    <h1 className='font-bold text-3xl text-black mb-2 text-center underline'><span className='text-3xl mobj'>Joining our Deep Learning Research Team</span></h1>
+                    <h1 className='font-bold text-3xl text-black mb-2 text-center underline'><span className='text-3xl mobj'>`Joining our Deep` Learning Research Team</span></h1>
                     <h2 className='font-bold text-center' style={{ fontSize:'1.7rem'}}><span className='mobj1'>What You Need to Know ?</span></h2>
                    <div style={{ borderTop: '1px solid #eee', marginTop:'1.5em' }}></div>
                     <h3 className='subhead' style={{ border:'none', marginTop:'0' }}>a) Are we a startup?</h3>
