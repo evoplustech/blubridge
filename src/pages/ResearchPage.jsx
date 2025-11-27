@@ -6,7 +6,7 @@ const ResearchPage = () => {
     return (
     <>
     <Helmet>
-            <title>Papers & Publications - BluBridge</title>
+            <title>Research Overview - Blubridge</title>
     </Helmet>
     <div>
       <a title="Google Analytics Alternative" href="https://clicky.com/101490753"><img style={{display:"none"}} alt="Clicky" src="//static.getclicky.com/media/links/badge.gif" border="0" /></a>
