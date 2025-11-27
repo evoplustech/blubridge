@@ -49,7 +49,7 @@ const ResearchPage = () => {
     <span class="op-abs-icon"></span>
     Abstract
 </div>
-        <p class="op-text">Blubridge proudly presents the process behind "Blu-WERP", our pipeline that sets a new industry standard for scalable, high-quality LLM pretraining data this month. In our paper, we demonstrate training and evaluation details, including the data preparation pipeline, from JusText extraction to Benchmark-targeted classification...<Link to="/Blu-Werp" className="op-link">More <span style={{letterSpacing:'-3px'}}>>></span></Link></p>
+        <p class="op-text">Blubridge proudly presents the process behind "Blu-WERP", our pipeline that sets a new industry standard for scalable, high-quality LLM pretraining data this month. In our paper, we demonstrate training and evaluation details, including the data preparation pipeline, from JusText extraction to Benchmark-targeted classification...<Link to="/Blu-Werp-Blog" className="op-link">More <span style={{letterSpacing:'-3px'}}>>></span></Link></p>
 
 
 <Link to="https://arxiv.org/abs/2511.18054" class="op-ext-link" target='_blank'>
