@@ -96,6 +96,7 @@ const Header = () => {
             >
               <div className="flex flex-col px-4 py-4 space-y-4">
                 <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-black font-medium">HOME</Link>
+                <Link to="/Research" onClick={() => setIsMobileMenuOpen(false)} className="text-black font-medium">RESEARCH</Link>
                 <Link to="/Careers" onClick={() => setIsMobileMenuOpen(false)} className="text-black font-medium">CAREERS</Link>
                 <Link to="/join-our-team" onClick={() => setIsMobileMenuOpen(false)} className="text-black font-medium">JOIN OUR TEAM</Link>
                 <Link to="/Contact" onClick={() => setIsMobileMenuOpen(false)} className="text-black font-medium">CONTACT</Link>
