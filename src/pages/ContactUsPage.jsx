@@ -12,7 +12,7 @@ const ContactUsPage = () => {
     </div>
     <section className="px-4 sm:px-6 flex items-center pt-3 pb-3">
       
-      <div className='flex flex-col max-w-[100%] md:max-w-[100%] lg:flex-row lg:max-w-[64%] mx-auto mt-4 mb-12'>
+      <div className='flex flex-col max-w-[100%] md:max-w-[100%] lg:flex-row lg:max-w-[64%] mx-auto mt-4 mb-12 w-full'>
           <div className='w-full lg:w-1/2 flex flex-col lg:mx-4 mx-auto'>
             <ContactInfoSection />
           </div>

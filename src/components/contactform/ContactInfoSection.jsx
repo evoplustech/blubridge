@@ -21,7 +21,7 @@ const ContactInfoSection = () => {
 
         <div className="bb-office-right">
           <div className="bb-pin-icon"><img src="/images/iconm.png"></img></div>
-          <Link to="https://www.google.com/maps/@12.995322,80.2678272,3a,75y,100.97h,96.44t/data=!3m7!1e1!3m5!1sWsJDiz4y1obGxh1B4PTrzA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.443799846570272%26panoid%3DWsJDiz4y1obGxh1B4PTrzA%26yaw%3D100.9726938608738!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
+          <Link to="https://www.google.com/maps/@12.9948226,80.268252,19.08z?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
         </div>
       </div>
 
@@ -38,7 +38,7 @@ const ContactInfoSection = () => {
 
         <div className="bb-office-right">
           <div className="bb-pin-icon"><img src="/images/iconm.png"></img></div>
-          <Link to="https://www.google.com/local/place/fid/0x3a52674aca00a59f:0xbe74d1b0e2583c39/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DrSKD62zPEKm7TEFZ-yUr7A%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D285.38077%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFnJTS0Q2MnpQRUttN1RFRloteVVyN0E%3D&sa=X&ved=2ahUKEwjXoYfe3ZKRAxUTT2wGHRIMGjcQpx96BAgZEBI" className="bb-map-link" target="_blank">View on Map »</Link>
+          <Link to="https://www.google.com/maps/place/Blubridge+Technologies/@13.0287762,80.2693766,17.96z/data=!4m6!3m5!1s0x3a52674aca00a59f:0xbe74d1b0e2583c39!8m2!3d13.0280416!4d80.2681674!16s%2Fg%2F11m5jk9jys?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
         </div>
       </div>
 
