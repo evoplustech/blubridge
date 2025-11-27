@@ -48,7 +48,7 @@ function App() {
         <Route path="/" element={<Dashboard />}>
           <Route index element={<HomePage />} />
           <Route path="/Research" element={<ResearchPage />} />
-          <Route path="/Blu-Werp-Blog" element={<BluwrepPage />} />
+          <Route path="/Research/Blu-Werp" element={<BluwrepPage />} />
           <Route path="/Careers" element={<CareerPage />} />
           <Route path="/join-our-team" element={<JoinOurTeam />} />
           <Route path="/Partner" element={<PartnerPage />} />

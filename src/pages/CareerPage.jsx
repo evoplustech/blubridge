@@ -7,7 +7,7 @@ const CareerPage = () => {
   return (
     <>
     <Helmet>
-         <title>Careers at Blubridge – Work with Our Deep learning Research Team</title>
+         <title>Careers at Blubridge - Work with Us</title>
     </Helmet>
      
     
@@ -40,6 +40,7 @@ const CareerPage = () => {
                     <ol className='pt-3'>
                       <li style={{listStyle: 'none',lineHeight:'25px'}}>a) Aptitude and Logical reasoning</li>
                       <li style={{listStyle: 'none',lineHeight:'25px'}}>b) Linear algebra, Calculus, Probability &amp; Statistics</li>
+                      <li style={{listStyle: 'none',lineHeight:'25px'}}>C) Strong Programming Foundations in C++ or Java</li>
                       {/* <li>Expertise in Python programming</li>
                       <li>A solid foundation in calculus and statistics</li>
                       <li>The drive to be among few in the country working on understanding and creating LLMs</li> */}

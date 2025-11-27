@@ -6,7 +6,7 @@ const JoinOurTeam = () => {
   return (
      <>
         <Helmet>
-             <title>Join our Deep Learning Research Team - Blubridge</title>
+             <title>Join our Research Team - Blubridge</title>
         </Helmet>
     <div>
     <section className="px-1 sm:px-2 mb-14 py-0 mt-2">
