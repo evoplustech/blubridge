@@ -21,7 +21,7 @@ const ContactInfoSection = () => {
 
         <div className="bb-office-right">
           <div className="bb-pin-icon"><img src="/images/iconm.png"></img></div>
-          <Link to="https://www.google.com/maps/@12.9948226,80.268252,19.08z?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
+          <Link to="https://www.google.com/maps/place/E-160,+E-160,+Tiger+Varadachari+Rd,+Ashtalaxmi+Garden,+Anna+Colony,+Chennai,+Tamil+Nadu+600090/@12.9952355,80.2678145,19.33z/data=!4m6!3m5!1s0x3a5267f99937211f:0x9a7c0ce1a9d5ab0f!8m2!3d12.995444!4d80.26799!16s%2Fg%2F11jgdsgng4?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
         </div>
       </div>
 
