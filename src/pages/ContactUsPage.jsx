@@ -10,13 +10,13 @@ const ContactUsPage = () => {
         Contact Us
       </h1>
     </div>
-    <section className="px-4 sm:px-6 flex items-center pt-3 pb-3">
+    <section className="w-full py-10">
       
-      <div className='flex flex-col max-w-[100%] md:max-w-[100%] lg:flex-row lg:max-w-[64%] mx-auto mt-4 mb-12 w-full'>
-          <div className='w-full lg:w-1/2 flex flex-col lg:mx-4 mx-auto'>
+      <div className='w-full flex flex-col lg:flex-row gap-10 px-4 md:px-10'>
+          <div className='w-full'>
             <ContactInfoSection />
           </div>
-          <div className='flex flex-col rounded-lg mt-12 lg:mt-0 lg:my-0 md:mt-8 sm:mt-8 lg:w-1/2  mx-0 lg:mx-4 md:mx-4 md:my-8 z-0 mainrt' style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
+          <div className='w-full reb' style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
               <ContactForm />
           </div>
       </div>

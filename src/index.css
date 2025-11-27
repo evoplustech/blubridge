@@ -492,6 +492,10 @@ body {
     font-style: italic;
 }
 
+.leb{ border-radius: 15px;}
+
+.reb{border-radius: 15px;}
+
 /* Mobile responsive */
 
 .bb-offices-sec {
@@ -499,7 +503,7 @@ body {
   max-width: 800px;
   margin: 0 auto;
   
-  padding: 20px;
+  padding: 40px 40px;
 }
 
 .bb-offices-title {
@@ -587,7 +591,15 @@ body {
 .mainlt{ border-radius: 10px;}
 .mainrt{ border-radius: 10px; }
 
+.w-full.flex.flex-col.lg\:flex-row.gap-10.px-4.md\:px-10 {
+  width: 1230px;
+  margin: 0 auto;
+}
+
 @media (max-width: 768px) {
+
+  .w-full.flex.flex-col.lg\:flex-row.gap-10.px-4.md\:px-10{ max-width: 100%;}
+
 .main-inner1 {
   max-width: 100%;
   
