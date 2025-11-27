@@ -1,42 +1,56 @@
+import { Link } from "react-router-dom";
 import GoogleMapEmbed from "./GoogleMapEmbed.jsx"
 
 const ContactInfoSection = () => {
   return (
-    <div className="text-black px-6 py-8 rounded-lg max-w-2xl space-y-6" style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
-      {/* Address */}
-      <div>
-        <h2 className="text-lg font-semibold mb-1">Our Address:</h2>
-        <p className="leading-relaxed">
-          <strong>Blubridge Technologies (P) Ltd.</strong><br />
-          30, Norton Rd, Mandavelipakkam,<br />
-          Raja Annamalai Puram,<br />
-          Chennai, Tamil Nadu 600028
-        </p>
-      </div>
+    <div className="text-black px-6 py-8 rounded-lg max-w-2xl space-y-6 mainlt" style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
+      
+   <section className="bb-offices-sec">
+      <h2 className="bb-offices-title">Our Offices</h2>
 
-      {/* Google Map */}
-      <div>
-        <h3 className="text-lg font-semibold mb-2">Google Location:</h3>
-        <div className="w-full h-64">
+      {/* Office Card 1 */}
+      <div className="bb-office-card">
+        <div className="bb-office-left">
+          <h3 className="bb-office-name">BluBridge Technologies (P) Ltd.</h3>
+          <p className="bb-office-address">
+            Plot #E160 Tiger Varadhachari Road,<br />
+            Kalakshetra Colony, Besant Nagar,<br />
+            Chennai – 600090
+          </p>
+        </div>
 
-            <a target="_blank" href="https://www.google.com/maps/place/30,+Norton+Rd,+Mandavelipakkam,+Mandaveli,+Chennai,+Tamil+Nadu+600028/@13.0280416,80.2681674,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267d1ab225575:0xe0b23cd509229297!8m2!3d13.0280416!4d80.2681674!16s%2Fg%2F11h3k0tc7n?entry=ttu&g_ep=EgoyMDI1MDIxOS4xIKXMDSoASAFQAw%3D%3D"><img src="/images/map.jpg"></img></a>
-          
-          {/* <GoogleMapEmbed /> */}
-          
+        <div className="bb-office-right">
+          <div className="bb-pin-icon"><img src="/images/iconm.png"></img></div>
+          <Link to="https://www.google.com/maps/@12.995322,80.2678272,3a,75y,100.97h,96.44t/data=!3m7!1e1!3m5!1sWsJDiz4y1obGxh1B4PTrzA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-6.443799846570272%26panoid%3DWsJDiz4y1obGxh1B4PTrzA%26yaw%3D100.9726938608738!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" className="bb-map-link" target="_blank">View on Map »</Link>
         </div>
       </div>
 
-      {/* Phone */}
-      <div>
-        <h3 className="text-lg font-semibold mb-1">Phone:</h3>
-        <p>+91 8925987250</p>
+      {/* Office Card 2 */}
+      <div className="bb-office-card">
+        <div className="bb-office-left">
+          <h3 className="bb-office-name">BluBridge Technologies (P) Ltd.</h3>
+          <p className="bb-office-address">
+            30, Norton Rd, Mandavelipakkam, Raja<br />
+            Annamalai Puram, Chennai, Tamil<br />
+            Nadu 600028
+          </p>
+        </div>
+
+        <div className="bb-office-right">
+          <div className="bb-pin-icon"><img src="/images/iconm.png"></img></div>
+          <Link to="https://www.google.com/local/place/fid/0x3a52674aca00a59f:0xbe74d1b0e2583c39/photosphere?iu=https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid%3DrSKD62zPEKm7TEFZ-yUr7A%26cb_client%3Dsearch.gws-prod.gps%26yaw%3D285.38077%26pitch%3D0%26thumbfov%3D100%26w%3D0%26h%3D0&ik=CAISFnJTS0Q2MnpQRUttN1RFRloteVVyN0E%3D&sa=X&ved=2ahUKEwjXoYfe3ZKRAxUTT2wGHRIMGjcQpx96BAgZEBI" className="bb-map-link" target="_blank">View on Map »</Link>
+        </div>
       </div>
 
-      {/* Email */}
-      <div>
-        <h3 className="text-lg font-semibold mb-1">Email:</h3>
-        <p>Info.1@blubridge.com</p>
+      {/* Contact Section */}
+      <div className="bb-contact-sec">
+        <p className="bb-contact-title">Phone:</p>
+        <p className="bb-contact-value">+91 8925987250</p>
+
+        <p className="bb-contact-title">Email:</p>
+        <p className="bb-contact-value">Info.1@blubridge.com</p>
       </div>
+    </section>
     </div>
   );
 };

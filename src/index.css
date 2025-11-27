@@ -494,6 +494,98 @@ body {
 
 /* Mobile responsive */
 
+.bb-offices-sec {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  padding: 20px;
+}
+
+.bb-offices-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.bb-office-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  border-left: 4px solid #aa9874;
+  border-bottom: 1px solid #aa9874;
+}
+
+.bb-office-left {
+  width: 70%;
+}
+
+.bb-office-name {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.bb-office-address {
+  font-size: 15px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.bb-office-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers icon horizontally */
+  justify-content: center;
+  text-align: center;
+  gap: 6px;              /* spacing between icon + link */
+}
+
+.bb-office-right {
+  text-align: center;
+  width: 30%;
+}
+
+.bb-pin-icon {
+  font-size: 26px;
+  margin-bottom: 6px;
+  padding-top: 1.2em;
+}
+
+.bb-map-link {
+  font-size: 14px;
+  color: #2a5bd7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.bb-map-link:hover {
+  text-decoration: underline;
+}
+
+.bb-contact-sec {
+  margin-top: 58px;
+}
+
+.bb-contact-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+
+.bb-contact-value {
+  font-size: 15px;
+  margin: 0 0 10px;
+}
+
+.mainlt{ border-radius: 10px;}
+.mainrt{ border-radius: 10px; }
 
 @media (max-width: 768px) {
 .main-inner1 {
