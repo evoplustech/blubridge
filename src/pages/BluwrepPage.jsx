@@ -40,7 +40,7 @@ const BluwrepPage = () => {
             </span>
         </h1>
 <div class="blb-btn-group">
-   <Link to="/Research"  class="paper-btn">
+   <Link to="https://arxiv.org/abs/2511.18054"  class="paper-btn" target='_blank'>
     <svg class="paper-icon" xmlns="http://www.w3.org/2000/svg" 
          width="20" height="20" fill="white" viewBox="0 0 24 24">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 
