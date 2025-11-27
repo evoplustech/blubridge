@@ -31,11 +31,11 @@ const HomePage = () => {
               <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                       <div className='mb-4 content1'>
-                        <h1 className='font-bold text-xl text-black mb-4'>Who we are? What do we want to do?</h1>
+                        <h2 className='font-bold text-xl text-black mb-4'>Who we are? What do we want to do?</h2>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
-                        <h1 className='my-4'>Our primary area of research and engineering is in: -</h1>
+                        <p className='my-4'>Our primary area of research and engineering is in: -</p>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">  
   <div className='flex flex-col items-center fouriconcol'>
     <div>
@@ -79,7 +79,7 @@ const HomePage = () => {
 <div class="grid grid-cols-3 gap-4">  
  
  <div class="...">
-  <h1 className='font-bold text-black mb-4 text-3xl how-do-we'>How do we plan to monetise it?</h1>
+  <h2 className='font-bold text-black mb-4 text-3xl how-do-we'>How do we plan to monetise it?</h2>
   </div>  
   <div class="col-span-2 ...">
  <p className='mb-[4px] font-semibold'>“An item that is tokenizable is learnable.”</p>
@@ -94,7 +94,7 @@ const HomePage = () => {
                       
                       <div className=''>
                         <div style={{ borderTop: '1px solid #eee', marginBottom: '1em' }}></div>
-                        <h2 className='font-bold text-black mb-4'>Our Social Media Handles</h2>
+                        <h3 className='font-bold text-black mb-4'>Our Social Media Handles</h3>
                         <p style={{ fontWeight: 400, margin: '10px 0px' }}>Follow our work on:</p>
                         <p style={{ fontWeight: 400, margin: '5px 0px' }}>
                           <strong>X (Twitter): </strong>

@@ -5,7 +5,7 @@ const ContactInfoSection = () => {
     <div className="text-black px-6 py-8 rounded-lg max-w-2xl space-y-6" style= {{ backgroundColor: 'rgb(255, 253, 247)' }}>
       {/* Address */}
       <div>
-        <h3 className="text-lg font-semibold mb-1">Our Address:</h3>
+        <h2 className="text-lg font-semibold mb-1">Our Address:</h2>
         <p className="leading-relaxed">
           <strong>Blubridge Technologies (P) Ltd.</strong><br />
           30, Norton Rd, Mandavelipakkam,<br />
