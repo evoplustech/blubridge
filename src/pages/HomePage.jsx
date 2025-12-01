@@ -31,7 +31,11 @@ const HomePage = () => {
               <div className='main-inner'>
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                       <div className='mb-4 content1'>
-                        <h2 className='font-bold text-xl text-black mb-4'>Who we are? What do we want to do?</h2>
+                        <h2 className='font-bold text-xl text-black mb-4'>Who we are? </h2>
+                        <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
+                          in large language models by building foundation transformer-based AI models, beginning
+                          with a practical, scalable 7B parameter base model.</p>
+                        <h2 className='font-bold text-xl text-black mb-4 mt-4'>What We Aim to Do?</h2>
                         <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
                           in large language models by building foundation transformer-based AI models, beginning
                           with a practical, scalable 7B parameter base model.</p>
