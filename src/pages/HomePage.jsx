@@ -32,13 +32,9 @@ const HomePage = () => {
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                       <div className='mb-4 content1'>
                         <h2 className='font-bold text-xl text-black mb-4'>Who we are? </h2>
-                        <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
-                          in large language models by building foundation transformer-based AI models, beginning
-                          with a practical, scalable 7B parameter base model.</p>
+                        <p>BluBridge is an early-stage AI research company focused on advancing probabilistic and predictive modeling—building next-generation Artificial Intelligence from the ground up. We are assembling a team of passionate, driven researchers and engineers committed to pushing the boundaries of machine learning.</p>
                         <h2 className='font-bold text-xl text-black mb-4 mt-4'>What We Aim to Do?</h2>
-                        <p>Blubridge is an early-stage AI research company. Our mission is to develop deep expertise
-                          in large language models by building foundation transformer-based AI models, beginning
-                          with a practical, scalable 7B parameter base model.</p>
+                        <p>Our immediate goal is: to develop a state-of-the-art 70-billion-parameter (dense) Large Language Model, establishing a strong foundation for future innovations in AI systems, it’s applications, and research.</p>
                         <p className='my-4'>Our primary area of research and engineering is in: -</p>
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">  
   <div className='flex flex-col items-center fouriconcol'>
@@ -102,13 +98,13 @@ const HomePage = () => {
                         <p style={{ fontWeight: 400, margin: '10px 0px' }}>Follow our work on:</p>
                         <p style={{ fontWeight: 400, margin: '5px 0px' }}>
                           <strong>X (Twitter): </strong>
-                          <a href="https://x.com/BlubridgeAI" className='text-[#046bd2] underline'>
+                          <a href="https://x.com/BlubridgeAI" target='_blank' className='text-[#046bd2] underline'>
                             https://x.com/Blubridge
                           </a>
                         </p>
                         <p style={{ fontWeight: 400 }}>
                           <strong>Youtube: </strong>
-                          <a href="https://www.youtube.com/@blubridge-ai" className='text-[#046bd2] underline'>
+                          <a href="https://www.youtube.com/@blubridge-ai" target='_blank' className='text-[#046bd2] underline'>
                             https://youtube.com/@blubridge
                           </a>
                         </p>
