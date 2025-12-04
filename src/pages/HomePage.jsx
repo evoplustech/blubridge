@@ -32,7 +32,7 @@ const HomePage = () => {
                 <div className="rounded-xl p-8 shadow-lg border border-gray-200/50 mb-3" style={{ backgroundColor: '#fffdf7'} }>
                       <div className='mb-4 content1'>
                         <h2 className='font-bold text-xl text-left text-black mb-4'>Who We Are? </h2>
-                        <p className="text-left">BluBridge is an early-stage AI research company focused on advancing probabilistic and predictive modeling—building next-generation Artificial Intelligence from the ground up. We are assembling a team of passionate, driven researchers and engineers comclsmitted to pushing the boundaries of machine learning.</p>
+                        <p className="text-left">BluBridge is an early-stage AI research company focused on advancing probabilistic and predictive modeling—building next-generation Artificial Intelligence from the ground up. We are assembling a team of passionate, driven researchers and engineers committed to pushing the boundaries of machine learning.</p>
                         <h2 className='font-bold text-xl text-left text-black mb-4 mt-4'>What We Aim to Do?</h2>
                         <p className="text-left">Our immediate goal is: to develop a state-of-the-art 70-billion-parameter (dense) Large Language Model, establishing a strong foundation for future innovations in AI systems, it’s applications, and research.</p>
                         <p className='my-4'>Our primary area of research and engineering is in: -</p>
